@@ -1,0 +1,331 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-viewport-profiles",
+            "version": "1.0.0"
+        },
+        {
+            "name": "alexa-layouts",
+            "version": "1.0.0"
+        },
+        {
+            "name": "alexa-styles",
+            "version": "1.0.0"
+        }
+    ],
+    "resources": [
+        {
+            "description": "Sauce boss background image assets",
+            "when": "${@viewportProfile == @hubRoundSmall}",
+            "strings": {
+                "backgroundBottom": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-bottom-smHub.png",
+                "backgroundLeft": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-left-smHub.png",
+                "backgroundRight": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-right-smHub.png",
+                "backgroundSecret": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-secret-smHub.png"
+            }
+        },
+        {
+            "description": "Sauce boss background image assets",
+            "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge}",
+            "strings": {
+                "backgroundBottom": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-bottom-Hub.png",
+                "backgroundLeft": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-left-Hub.png",
+                "backgroundRight": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-right-Hub.png",
+                "backgroundSecret": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-secret-Hub.png"
+            }
+        },
+        {
+            "description": "Sauce boss background image assets",
+            "when": "${@viewportProfile == @tvLandscapeXLarge}",
+            "strings": {
+                "backgroundBottom": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-bottom-TV.png",
+                "backgroundLeft": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-left-TV.png",
+                "backgroundRight": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-right-TV.png",
+                "backgroundSecret": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-secret-TV.png"
+            }
+        },
+        {
+            "description": "Sauce boss image assets",
+            "strings": {
+                "bbq": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/barbecue-sauce-500x500.png",
+                "cranberry": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/cranberry-sauce-500x500.png",
+                "honeyMustard": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/honey mustard-sauce-500x500.png",
+                "pesto": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/pesto-sauce-500x500.png",
+                "pizza": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/pizza-sauce-500x500.png",
+                "secretSauce": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/secret-sauce-500x500.png",
+                "tartar": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/tartar-sauce-500x500.png",
+                "thousandIsland": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/thousand island-sauce-500x500.png",
+                "skillIcon": "https://s3.amazonaws.com/ask-samples-resources/icons/sauce-boss-icon.png"
+            }
+        }
+    ],
+    "layouts": {
+        "SauceListItem": {
+            "parameters": [
+                {
+                    "name": "imgSrc",
+                    "type": "string"
+                },
+                {
+                    "name": "sauce",
+                    "type": "string"
+                }
+            ],
+            "items": [
+                {
+                    "when": "${@viewportProfile == @hubRoundSmall}",
+                    "type": "TouchWrapper",
+                    "id": "touch-${sauce}",
+                    "width": "50vw",
+                    "height": "70vh",
+                    "item": {
+                        "type": "Container",
+                        "direction": "column",
+                        "width": "50vw",
+                        "height": "70vh",
+                        "alignItems": "center",
+                        "items": [
+                            {
+                                "type": "Image",
+                                "source": "${imgSrc}",
+                                "width": "50vh",
+                                "height": "50vh",
+                                "borderRadius": "5vh",
+                                "scale": "best-fill"
+                            },
+                            {
+                                "type": "Text",
+                                "text": "${ordinal}. ${sauce}",
+                                "width": "50vw",
+                                "height": "20vh",
+                                "paddingTop": "3vh",
+                                "fontSize": "5vw",
+                                "fontWeight": 100,
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    "onPress": {
+                        "type": "SendEvent",
+                        "arguments": [
+                            "${sauce}",
+                            "${ordinal}"
+                        ]
+                    }
+                },
+                {
+                    "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                    "type": "TouchWrapper",
+                    "id": "touch-${sauce}",
+                    "item": {
+                        "type": "Container",
+                        "direction": "column",
+                        "width": "25vw",
+                        "height": "30vh",
+                        "alignItems": "center",
+                        "items": [
+                            {
+                                "type": "Image",
+                                "source": "${imgSrc}",
+                                "width": "22vh",
+                                "borderRadius": "22vh",
+                                "height": "22vh",
+                                "scale": "best-fill"
+                            },
+                            {
+                                "type": "Text",
+                                "text": "${sauce}",
+                                "width": "25vw",
+                                "height": "8vh",
+                                "paddingTop": "2vh",
+                                "fontSize": "2.5vw",
+                                "fontWeight": "100",
+                                "textAlign": "center"
+                            }
+                        ]
+                    },
+                    "onPress": {
+                        "type": "SendEvent",
+                        "arguments": [
+                            "${sauce}"
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "direction": "column",
+                "items": [
+                    {
+                        "type": "Image",
+                        "source": "@backgroundRight",
+                        "scale": "best-fill",
+                        "width": "100vw",
+                        "height": "100vh"
+                    },
+                    {
+                        "type": "Container",
+                        "position": "absolute",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "direction": "column",
+                        "items": [
+                            {
+                                "type": "AlexaHeader",
+                                "headerTitle": "WELCOME TO SAUCE BOSS",
+                                "headerAttributionImage": "@skillIcon"
+                            },
+                            {
+                                "when": "${@viewportProfile == @hubRoundSmall}",
+                                "type": "Sequence",
+                                "scrollDirection": "horizontal",
+                                "numbered": true,
+                                "width": "100vw",
+                                "height": "70vh",
+                                "position": "relative",
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "direction": "column",
+                                "items": [
+                                    {
+                                        "type": "SauceListItem",
+                                        "sauce": "BBQ Sauce",
+                                        "paddingLeft": "25vw",
+                                        "imgSrc": "@bbq"
+                                    },
+                                    {
+                                        "type": "SauceListItem",
+                                        "sauce": "Cranberry Sauce",
+                                        "paddingLeft": "35vw",
+                                        "imgSrc": "@cranberry"
+                                    },
+                                    {
+                                        "type": "SauceListItem",
+                                        "sauce": "Honey Mustard",
+                                        "paddingLeft": "45vw",
+                                        "imgSrc": "@honeyMustard"
+                                    },
+                                    {
+                                        "type": "SauceListItem",
+                                        "sauce": "Pesto",
+                                        "paddingLeft": "55vw",
+                                        "imgSrc": "@pesto"
+                                    },
+                                    {
+                                        "type": "SauceListItem",
+                                        "sauce": "Pizza Sauce",
+                                        "paddingLeft": "60vw",
+                                        "imgSrc": "@pizza"
+                                    },
+                                    {
+                                        "type": "SauceListItem",
+                                        "sauce": "Tartar Sauce",
+                                        "paddingLeft": "65vw",
+                                        "imgSrc": "@tartar"
+                                    },
+                                    {
+                                        "type": "SauceListItem",
+                                        "sauce": "Thousand Island",
+                                        "paddingLeft": "65vw",
+                                        "imgSrc": "@thousandIsland"
+                                    },
+                                    {
+                                        "type": "SauceListItem",
+                                        "paddingLeft": "65vw",
+                                        "paddingRight": "75vw",
+                                        "sauce": "Secret Sauce",
+                                        "imgSrc": "@secretSauce"
+                                    }
+                                ]
+                            },
+                            {
+                                "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                                "type": "Container",
+                                "width": "100vw",
+                                "height": "70vh",
+                                "direction": "column",
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "items": [
+                                    {
+                                        "type": "Container",
+                                        "width": "100vw",
+                                        "height": "35vh",
+                                        "direction": "row",
+                                        "items": [
+                                            {
+                                                "type": "SauceListItem",
+                                                "sauce": "BBQ Sauce",
+                                                "imgSrc": "@bbq"
+                                            },
+                                            {
+                                                "type": "SauceListItem",
+                                                "sauce": "Cranberry Sauce",
+                                                "imgSrc": "@cranberry"
+                                            },
+                                            {
+                                                "type": "SauceListItem",
+                                                "sauce": "Honey Mustard",
+                                                "imgSrc": "@honeyMustard"
+                                            },
+                                            {
+                                                "type": "SauceListItem",
+                                                "sauce": "Pesto",
+                                                "imgSrc": "@pesto"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Container",
+                                        "width": "100vw",
+                                        "height": "35vh",
+                                        "position": "relative",
+                                        "top": "1vh",
+                                        "direction": "row",
+                                        "items": [
+                                            {
+                                                "type": "SauceListItem",
+                                                "sauce": "Pizza Sauce",
+                                                "imgSrc": "@pizza"
+                                            },
+                                            {
+                                                "type": "SauceListItem",
+                                                "sauce": "Tartar Sauce",
+                                                "imgSrc": "@tartar"
+                                            },
+                                            {
+                                                "type": "SauceListItem",
+                                                "sauce": "Thousand Island",
+                                                "imgSrc": "@thousandIsland"
+                                            },
+                                            {
+                                                "type": "SauceListItem",
+                                                "sauce": "Secret Sauce",
+                                                "imgSrc": "@secretSauce"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                                "type": "AlexaFooter",
+                                "footerHint": "${payload.sauceBossData.properties.hintString}"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

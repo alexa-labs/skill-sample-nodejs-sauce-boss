@@ -1,0 +1,44 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Sauce Boss will help you make all sorts of unique sauces from basic condiments and spices you keep in your kitchen.",
+          "examplePhrases": [
+            "Alexa open Sauce Boss",
+            "Alexa ask Sauce Boss what's the recipe for barbecue sauce",
+            "Alexa ask Sauce Boss how do I make barbecue sauce"
+          ],
+          "keywords": [
+            "sauce",
+            "recipe",
+            "kitchen",
+            "cooking",
+            "food",
+            "how to"
+          ],
+          "name": "Sauce Boss",
+          "description": "Got a passion for unique and interesting sauces? Do you buy scrumptious, rare condiments only to have them expire before use? Running out of space in your fridge? Facing judgement from friends or family for lackluster cooking skill?!? Have no fear, Sauce Boss is here! Sauce Boss will help you make all sorts of fascinating sauces from basic condiments and spices that you keep around your kitchen. Just ask Sauce Boss for a sauce you want to whip up and you'll receive a simple, easy-to-follow recipe to jazz up any dish you make, wow your folks, please your appetite and save space in your fridge. YUM!!!!"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-sauce-boss"
+        },
+        "interfaces": [
+          {
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
