@@ -191,8 +191,7 @@
                                 "scrollDirection": "horizontal",
                                 "numbered": true,
                                 "width": "100vw",
-                                "height": "70vh",
-                                "position": "relative",
+                                "height": "75vh",
                                 "alignItems": "center",
                                 "justifyContent": "center",
                                 "direction": "column",
@@ -200,48 +199,56 @@
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "BBQ Sauce",
-                                        "paddingLeft": "25vw",
+                                        "position": "absolute",
+                                        "left": "25vw",
                                         "imgSrc": "@bbq"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Cranberry Sauce",
-                                        "paddingLeft": "35vw",
+                                        "position": "absolute",
+                                        "left": "85vw",
                                         "imgSrc": "@cranberry"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Honey Mustard",
-                                        "paddingLeft": "45vw",
+                                        "position": "absolute",
+                                        "left": "145vw",
                                         "imgSrc": "@honeyMustard"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Pesto",
-                                        "paddingLeft": "55vw",
+                                        "position": "absolute",
+                                        "left": "205vw",
                                         "imgSrc": "@pesto"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Pizza Sauce",
-                                        "paddingLeft": "60vw",
+                                        "position": "absolute",
+                                        "left": "265vw",
                                         "imgSrc": "@pizza"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Tartar Sauce",
-                                        "paddingLeft": "65vw",
+                                        "position": "absolute",
+                                        "left": "325vw",
                                         "imgSrc": "@tartar"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Thousand Island",
-                                        "paddingLeft": "65vw",
+                                        "position": "absolute",
+                                        "left": "385vw",
                                         "imgSrc": "@thousandIsland"
                                     },
                                     {
                                         "type": "SauceListItem",
-                                        "paddingLeft": "65vw",
+                                        "position": "absolute",
+                                        "left": "445vw",
                                         "paddingRight": "75vw",
                                         "sauce": "Secret Sauce",
                                         "imgSrc": "@secretSauce"
