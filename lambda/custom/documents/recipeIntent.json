@@ -29,7 +29,7 @@
         },
         {
             "description": "Sauce boss background image assets",
-            "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge}",
+            "when": "${@viewportProfile == @hubLandscapeSmall || @viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge}",
             "strings": {
                 "backgroundBottom": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-bottom-Hub.png",
                 "backgroundLeft": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-left-Hub.png",
@@ -139,7 +139,7 @@
                                 ]
                             },
                             {
-                                "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                                "when": "${@viewportProfile == @hubLandscapeSmall || @viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
                                 "type": "Container",
                                 "direction": "row",
                                 "width": "100vw",

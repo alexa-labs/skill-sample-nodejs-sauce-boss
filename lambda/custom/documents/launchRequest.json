@@ -29,7 +29,7 @@
         },
         {
             "description": "Sauce boss background image assets",
-            "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge}",
+            "when": "${@viewportProfile == @hubLandscapeSmall || @viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge}",
             "strings": {
                 "backgroundBottom": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-bottom-Hub.png",
                 "backgroundLeft": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/sauceBoss-background-left-Hub.png",
@@ -77,47 +77,54 @@
             "items": [
                 {
                     "when": "${@viewportProfile == @hubRoundSmall}",
-                    "type": "TouchWrapper",
-                    "id": "touch-${sauce}",
-                    "width": "50vw",
-                    "height": "70vh",
-                    "item": {
-                        "type": "Container",
-                        "direction": "column",
+                    "type":"Container",
+                    "width":"60vw",
+                    "height":"70vh",
+                    "items": [
+                    {                    
+                        "type": "TouchWrapper",
+                        "id": "touch-${sauce}",
                         "width": "50vw",
                         "height": "70vh",
-                        "alignItems": "center",
-                        "items": [
-                            {
-                                "type": "Image",
-                                "source": "${imgSrc}",
-                                "width": "50vh",
-                                "height": "50vh",
-                                "borderRadius": "5vh",
-                                "scale": "best-fill"
-                            },
-                            {
-                                "type": "Text",
-                                "text": "${ordinal}. ${sauce}",
-                                "width": "50vw",
-                                "height": "20vh",
-                                "paddingTop": "3vh",
-                                "fontSize": "5vw",
-                                "fontWeight": 100,
-                                "textAlign": "center"
-                            }
-                        ]
-                    },
-                    "onPress": {
-                        "type": "SendEvent",
-                        "arguments": [
-                            "${sauce}",
-                            "${ordinal}"
+                        "item": {
+                            "type": "Container",
+                            "direction": "column",
+                            "width": "50vw",
+                            "height": "70vh",
+                            "alignItems": "center",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "source": "${imgSrc}",
+                                    "width": "50vh",
+                                    "height": "50vh",
+                                    "borderRadius": "5vh",
+                                    "scale": "best-fill"
+                                },
+                                {
+                                    "type": "Text",
+                                    "text": "${ordinal}. ${sauce}",
+                                    "width": "50vw",
+                                    "height": "20vh",
+                                    "paddingTop": "3vh",
+                                    "fontSize": "5vw",
+                                    "fontWeight": "100",
+                                    "textAlign": "center"
+                                }
+                            ]
+                        },
+                        "onPress": [{
+                            "type": "SendEvent",
+                            "arguments": [
+                                "${sauce}",
+                                "${ordinal}"
+                            ]}
                         ]
                     }
+                    ]
                 },
                 {
-                    "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                    "when": "${@viewportProfile == @hubLandscapeSmall || @viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
                     "type": "TouchWrapper",
                     "id": "touch-${sauce}",
                     "item": {
@@ -147,12 +154,12 @@
                             }
                         ]
                     },
-                    "onPress": {
+                    "onPress": [{
                         "type": "SendEvent",
                         "arguments": [
                             "${sauce}"
                         ]
-                    }
+                    }]
                 }
             ]
         }
@@ -192,71 +199,59 @@
                                 "numbered": true,
                                 "width": "100vw",
                                 "height": "75vh",
-                                "alignItems": "center",
-                                "justifyContent": "center",
-                                "direction": "column",
+                                "firstItem": [{
+                                    "type": "Container",
+                                    "width": "25vw"
+                                }],
+                                "lastItem":{
+                                    "type": "Container",
+                                    "width": "15vw"
+                                },
                                 "items": [
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "BBQ Sauce",
-                                        "position": "absolute",
-                                        "left": "25vw",
                                         "imgSrc": "@bbq"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Cranberry Sauce",
-                                        "position": "absolute",
-                                        "left": "85vw",
                                         "imgSrc": "@cranberry"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Honey Mustard",
-                                        "position": "absolute",
-                                        "left": "145vw",
                                         "imgSrc": "@honeyMustard"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Pesto",
-                                        "position": "absolute",
-                                        "left": "205vw",
                                         "imgSrc": "@pesto"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Pizza Sauce",
-                                        "position": "absolute",
-                                        "left": "265vw",
                                         "imgSrc": "@pizza"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Tartar Sauce",
-                                        "position": "absolute",
-                                        "left": "325vw",
                                         "imgSrc": "@tartar"
                                     },
                                     {
                                         "type": "SauceListItem",
                                         "sauce": "Thousand Island",
-                                        "position": "absolute",
-                                        "left": "385vw",
                                         "imgSrc": "@thousandIsland"
                                     },
                                     {
                                         "type": "SauceListItem",
-                                        "position": "absolute",
-                                        "left": "445vw",
-                                        "paddingRight": "75vw",
                                         "sauce": "Secret Sauce",
                                         "imgSrc": "@secretSauce"
                                     }
                                 ]
                             },
                             {
-                                "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                                "when": "${@viewportProfile == @hubLandscapeSmall || @viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
                                 "type": "Container",
                                 "width": "100vw",
                                 "height": "70vh",
@@ -325,7 +320,7 @@
                                 ]
                             },
                             {
-                                "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                                "when": "${@viewportProfile == @hubLandscapeSmall || @viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
                                 "type": "AlexaFooter",
                                 "footerHint": "${payload.sauceBossData.properties.hintString}"
                             }
