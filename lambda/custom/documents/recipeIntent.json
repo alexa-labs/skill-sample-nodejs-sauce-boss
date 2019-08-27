@@ -1,21 +1,35 @@
 {
     "type": "APL",
-    "version": "1.0",
+    "version": "1.1",
     "theme": "dark",
     "import": [
         {
             "name": "alexa-viewport-profiles",
-            "version": "1.0.0"
+            "version": "1.1.0"
         },
         {
             "name": "alexa-layouts",
-            "version": "1.0.0"
+            "version": "1.1.0"
         },
         {
             "name": "alexa-styles",
-            "version": "1.0.0"
+            "version": "1.1.0"
         }
     ],
+    "styles": {
+        "karaokeText": {
+            "values": [
+                {
+                    "when": "${state.karaoke}",
+                    "color": "white"
+                },
+                {
+                    "when": "${state.karaokeTarget}",
+                    "color": "aqua"
+                }
+            ]
+        }
+    },
     "resources": [
         {
             "description": "Sauce boss background image assets",
@@ -107,7 +121,7 @@
                                 "width": "100vw",
                                 "height": "80vh",
                                 "position": "relative",
-                                "top": "25vh",
+                                "top": "0vh",
                                 "direction": "column",
                                 "items": [
                                     {
@@ -125,12 +139,12 @@
                                                 {
                                                     "type": "Text",
                                                     "id": "recipeText",
-                                                    "style": "textStyleKaraoke",
+                                                    "style": "karaokeText",
                                                     "text": "${payload.sauceBossData.properties.selectedSauceText}",
                                                     "speech": "${payload.sauceBossData.properties.selectedSauceSpeech}",
-                                                    "width": "75vw",
+                                                    "width": "70vw",
                                                     "textAlign": "center",
-                                                    "fontSize": "7vh",
+                                                    "fontSize": "6vh",
                                                     "fontWeight": 300
                                                 }
                                             ]
@@ -165,7 +179,7 @@
                                                 {
                                                     "type": "Text",
                                                     "id": "recipeText",
-                                                    "style": "textStyleKaraoke",
+                                                    "style": "karaokeText",
                                                     "text": "${payload.sauceBossData.properties.selectedSauceText}",
                                                     "speech": "${payload.sauceBossData.properties.selectedSauceSpeech}",
                                                     "fontSize": "6vh",

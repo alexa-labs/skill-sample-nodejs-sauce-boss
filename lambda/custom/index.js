@@ -78,7 +78,7 @@ const LaunchRequestHandler = {
     if (supportsAPL(handlerInput)) {
       responseBuilder.addDirective({
         type: 'Alexa.Presentation.APL.RenderDocument',
-        version: '1.0',
+        version: '1.1',
         document: APLDocs.launch,
         datasources: {
           sauceBossData: {
@@ -148,7 +148,7 @@ const HelpHandler = {
     if (supportsAPL(handlerInput)) {
       responseBuilder.addDirective({
         type: 'Alexa.Presentation.APL.RenderDocument',
-        version: '1.0',
+        version: '1.1',
         datasources: recipes,
         document: APLDocs.help,
       });
@@ -407,7 +407,7 @@ function generateRecipeOutput(handlerInput, itemName) {
       return responseBuilder.addDirective({
         type: 'Alexa.Presentation.APL.RenderDocument',
         token: 'sauce-boss',
-        version: '1.0',
+        version: '1.1',
         document: APLDocs.recipe,
         datasources: constructRecipeDataSource(itemName, recipe, requestAttributes.t('HINT_TEMPLATE', itemName)),
       })
