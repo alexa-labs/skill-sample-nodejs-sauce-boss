@@ -55,6 +55,12 @@ const languageStrings = {
       SKILL_NAME: 'Sauce Boss',
     },
   },
+  'en-AU': {
+    translation: {
+      RECIPES: recipes.RECIPE_EN_US,
+      SKILL_NAME: 'Sauce Boss',
+    },
+  },
 };
 
 /* INTENT HANDLERS */
@@ -66,7 +72,7 @@ const LaunchRequestHandler = {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     const sessionAttributes = handlerInput.attributesManager.getSessionAttributes();
 
-    const item = requestAttributes.t(getRandomItem(Object.keys(recipes.RECIPE_EN_US)));
+    const item = getRandomItem(Object.keys(requestAttributes.t('RECIPES')));
 
     const speakOutput = requestAttributes.t('WELCOME_MESSAGE', requestAttributes.t('SKILL_NAME'), item);
     const repromptOutput = requestAttributes.t('WELCOME_REPROMPT');
@@ -138,7 +144,7 @@ const HelpHandler = {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     const sessionAttributes = handlerInput.attributesManager.getSessionAttributes();
 
-    const item = requestAttributes.t(getRandomItem(Object.keys(recipes.RECIPE_EN_US)));
+    const item = getRandomItem(Object.keys(requestAttributes.t('RECIPES')));
 
     sessionAttributes.speakOutput = requestAttributes.t('HELP_MESSAGE', item);
     sessionAttributes.repromptSpeech = requestAttributes.t('HELP_REPROMPT', item);

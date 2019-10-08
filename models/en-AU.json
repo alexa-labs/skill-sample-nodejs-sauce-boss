@@ -1,0 +1,286 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "sauce boss",
+          "intents": [
+              {
+                  "name": "RecipeIntent",
+                  "slots": [
+                    {
+                        "name": "Item",
+                        "type": "LIST_OF_ITEMS",
+                        "samples": [
+                            "I want {Item} sauce",
+                            "{Item} sauce sounds good",
+                            "how about {Item}",
+                            "I'd like the recipe for {Item}",
+                            "{Item}"
+                        ]
+                    }
+                ],
+                  "samples": [
+                      "how can I craft a {Item}",
+                      "how can I craft an {Item}",
+                      "how can I craft {Item}",
+                      "how can I craft {Item} sauce",
+                      "how can I get a {Item}",
+                      "how can I get an {Item}",
+                      "how can I get {Item}",
+                      "how can I make a {Item}",
+                      "how can I make an {Item}",
+                      "how can I make {Item}",
+                      "how can I make {Item} sauce",
+                      "how can you craft a {Item}",
+                      "how can you craft an {Item}",
+                      "how can you craft {Item}",
+                      "how can you get a {Item}",
+                      "how can you get an {Item}",
+                      "how can you get {Item}",
+                      "how can you make a {Item}",
+                      "how can you make an {Item}",
+                      "how can you make {Item}",
+                      "how can you make {Item} sauce",
+                      "how do I craft a {Item}",
+                      "how do I craft an {Item}",
+                      "how do I craft {Item}",
+                      "how do I get a {Item}",
+                      "how do I get an {Item}",
+                      "how do I get {Item}",
+                      "how do I make a {Item}",
+                      "how do I make an {Item}",
+                      "how do I make {Item}",
+                      "how do I make {Item} sauce",
+                      "how do you build a {Item}",
+                      "how do you build an {Item}",
+                      "how do you build {Item}",
+                      "how do you craft a {Item}",
+                      "how do you craft an {Item}",
+                      "how do you craft {Item}",
+                      "how do you make a {Item}",
+                      "how do you make an {Item}",
+                      "how do you make {Item}",
+                      "how is a {Item} crafted",
+                      "how is a {Item} made",
+                      "how is an {Item} crafted",
+                      "how is an {Item} made",
+                      "how is {Item} crafted",
+                      "how is {Item} made",
+                      "how is {Item} sauce made",
+                      "how {Item} is made",
+                      "recipe for a {Item}",
+                      "recipe for an {Item}",
+                      "recipe for {Item}",
+                      "recipe for {Item} sauce",
+                      "recipes for a {Item}",
+                      "recipes for an {Item}",
+                      "recipes for {Item}",
+                      "what are the ingredients for a {Item}",
+                      "what are the ingredients for an {Item}",
+                      "what are the ingredients for {Item}",
+                      "what are the ingredients for {Item} sauce",
+                      "what do I need for a {Item}",
+                      "what do I need for an {Item}",
+                      "what do I need for {Item}",
+                      "what do I need for {Item} sauce",
+                      "what do I need to build {Item}",
+                      "what do I need to craft a {Item}",
+                      "what do I need to craft an {Item}",
+                      "what do I need to craft {Item}",
+                      "what do I need to get for a {Item}",
+                      "what do I need to get for an {Item}",
+                      "what do I need to get for {Item}",
+                      "what do I need to get to craft a {Item}",
+                      "what do I need to get to craft an {Item}",
+                      "what do I need to get to craft {Item}",
+                      "what do I need to get to make a {Item}",
+                      "what do I need to get to make an {Item}",
+                      "what do I need to get to make {Item}",
+                      "what do I need to have to build a {Item}",
+                      "what do I need to have to build an {Item}",
+                      "what do I need to have to build {Item}",
+                      "what do I need to have to craft a {Item}",
+                      "what do I need to have to craft an {Item}",
+                      "what do I need to have to craft {Item}",
+                      "what do I need to have to make a {Item}",
+                      "what do I need to have to make an {Item}",
+                      "what do I need to have to make {Item}",
+                      "what do I need to make a {Item}",
+                      "what do I need to make an {Item}",
+                      "what do I need to make {Item}",
+                      "what do you need for a {Item}",
+                      "what do you need for an {Item}",
+                      "what do you need for {Item}",
+                      "what ingredients do I need to craft a {Item}",
+                      "what ingredients do I need to craft an {Item}",
+                      "what ingredients do I need to craft {Item}",
+                      "what ingredients do I need to make a {Item}",
+                      "what ingredients do I need to make an {Item}",
+                      "what ingredients do I need to make {Item}",
+                      "what ingredients do I need to make {Item} sauce",
+                      "what is in a {Item}",
+                      "what is in an {Item}",
+                      "what is in {Item}",
+                      "what is the recipe for a {Item}",
+                      "what is the recipe for an {Item}",
+                      "what is the recipe for {Item}",
+                      "what is the recipe for {Item} sauce",
+                      "what's in a {Item}",
+                      "what's in an {Item}",
+                      "what's in {Item}",
+                      "what's the recipe for a {Item}",
+                      "what's the recipe for an {Item}",
+                      "what's the recipe for {Item}",
+                      "how to craft {Item}",
+                      "how to craft a {Item}",
+                      "how to craft an {Item}",
+                      "how to make a {Item}",
+                      "how to make an {Item}",
+                      "how to make {Item}",
+                      "how to make {Item} sauce"
+                  ]
+              },
+              {
+                  "name": "AMAZON.RepeatIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.PreviousIntent",
+                  "samples": []
+              }
+          ],
+          "types": [
+              {
+                "name": "LIST_OF_ITEMS",
+                "values": [
+                    {
+                        "name": {
+                            "value": "secret"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "cranberry"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "pizza"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "tartar"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "pesto"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "thousand island"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "worcestershire"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "caesar"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "ranch"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "barbecue",
+                            "synonyms": [
+                                "b. b. q."
+                            ]
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "honey mustard"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "dialog": {
+        "intents": [
+            {
+                "name": "RecipeIntent",
+                "delegationStrategy": "ALWAYS",
+                "confirmationRequired": false,
+                "prompts": {},
+                "slots": [
+                    {
+                        "name": "Item",
+                        "type": "LIST_OF_ITEMS",
+                        "confirmationRequired": false,
+                        "elicitationRequired": true,
+                        "prompts": {
+                            "elicitation": "ElicitItemPrompt"
+                        },
+                        "validations": [
+                            {
+                                "type": "hasEntityResolutionMatch",
+                                "prompt": "ItemValidationPrompt"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+        {
+            "id": "ElicitItemPrompt",
+            "variations": [
+                {
+                    "type": "PlainText",
+                    "value": "Which recipe did you want?"
+                }
+            ]
+        },
+        {
+            "id": "ItemValidationPrompt",
+            "variations": [
+                {
+                    "type": "PlainText",
+                    "value": "I didn't catch that.  Which recipe did you want?"
+                },
+                {
+                    "type": "PlainText",
+                    "value": "I don't know the recipe for {Item} .  Which recipe did you want?"
+                }
+            ]
+        }
+    ]
+}
+}
