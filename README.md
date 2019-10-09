@@ -25,20 +25,23 @@ Welcome!  You too can be a "sauce boss" with the help of the sauce boss skill!  
     1. Name the skill whatever you want, but we recommend `Sauce Boss`!
     1. Choose the language model you want to use, as long as as it is `English (US)` which corresponds to **en-US**.  The skill is i18n-ready.  (Hint, hint...)
     1. Choose the **Custom** interaction model.
-    1. Choose **Alexa Hosted**.
+    1. Choose **Alexa-Hosted (Node.js)**.
 1. It may take a minute, but when your skill is ready, go to the **JSON Editor** section and replace all the contents with the interaction model from [here](./models) that matches the locale you chose in the previous step.  Click **Save Model**.
 1. Click on **Interfaces** and enable **Alexa Presentation Language**.  (**Auto Delegation** should already be enabled.)
 1. Save that change and build your model.
 1. Click on the **Code** tab and update the following files with the contents from this repo:
     * **index.js** with this [index.js](./lambda/custom/index.js) (Pro tip: click the **Raw** button to make it easier to copy)
     * **package.json** with this [package.json](./lambda/custom/package.json)
-1. Create a folder named `languages`. (The folder path should be `lambda/languages`.)
-1. In the **languages** folder, create a file named `en-US.js` (assuming you picked en-US as your locale) and source the contents from [here](./lambda/custom/languages).
-1. Create a folder named `documents`.
+1. Add the following files in folder named `lambda` with noted content:
+    * `aplUtils.js` from the file [aplUtils.js](./lambda/custom/aplUtils.js) (Utilities for APL Support: Directives - Commands - Datasources)
+    * `localisation.js` from the file [localisation.js](./lambda/custom/localisation.js) (Voice & Display prompts - all locales)
+    * `recipes.js` from the file [recipes.js](./lambda/custom/recipes.js) (Sauces Name & instructions - all locales)
+    * `recipeUtils.js` from the file [recipeUtils.js](./lambda/custom/recipeUtils) (Utilities to manage recipes)
+1. Create a folder named `documents` (for APL Templates).
 1. In the **documents** folder, create these files with the noted content:
-    * `launchRequest.json` from the file [launchRequest.json](./lambda/custom/documents/launchRequest.json)
-    * `recipeIntent.json` from the file [recipeIntent.json](./lambda/custom/documents/recipeIntent.json)
-    * `helpIntent.json` from the file [helpIntent.json](./lambda/custom/documents/helpIntent.json)
+    * `launchRequest.json` from the file [launchRequest.json](./lambda/custom/documents/launchRequest.json) (APL Template for Launch Screen)
+    * `recipeIntent.json` from the file [recipeIntent.json](./lambda/custom/documents/recipeIntent.json) (APL Template for Recipe Screen)
+    * `helpIntent.json` from the file [helpIntent.json](./lambda/custom/documents/helpIntent.json) (APL Template for Help Screen)
 1. Save and Deploy the function
 1. Click on the **Test** tab, enable the skill and check it out.  Phrases you can try include:
     * `open sauce boss` (or whatever invocation name you used)

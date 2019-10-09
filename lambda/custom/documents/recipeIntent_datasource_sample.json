@@ -1,0 +1,26 @@
+{
+    "sauceBossData": {
+        "type": "object",
+        "properties": {
+            "description": "Use this datasource to render Recipe Template in APL Authoring Tool",
+            "headerTitle": "HOW TO MAKE A PESTO SAUCE",
+            "headerBackButton": "true",
+            "sauceImg": "https://s3.amazonaws.com/ask-samples-resources/images/sauce-boss/pesto-sauce-500x500.png",
+            "sauceText": "To make pesto, combine basil, garlic, Parmesan cheese, olive oil, and pine nuts in a food processor or blender. Blend to a smooth paste. Add parsley if desired.",
+            "sauceSssml": "<speak>To make pesto, combine basil, garlic, Parmesan cheese, olive oil, and pine nuts in a food processor or blender. Blend to a smooth paste. Add parsley if desired.</speak>",
+            "hintText": "how to make tartar sauce?"
+        },
+        "transformers": [
+            {
+                "inputPath": "sauceSsml",
+                "transformer": "ssmlToSpeech",
+                "outputName": "sauceSpeech"
+            },
+            {
+                "inputPath": "hintText",
+                "transformer": "textToHint"
+            }
+        ]
+        
+    }
+}

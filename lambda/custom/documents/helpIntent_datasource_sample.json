@@ -1,0 +1,18 @@
+{
+    "sauceBossData": {
+      "description": "Use this datasource to render Help Template in APL Authoring Tool",
+      "headerTitle": "HELP",
+      "headerBackButton": "true",
+      "headerSubtitle": "Select the sauce you want to prepare",
+      "items": [
+          { "primaryText": "How do I make BBQ Sauce ?", "id": "BBQ" },
+          { "primaryText": "How do I make cranberry sauce?", "id": "CRA" },
+          { "primaryText": "How do I make honey mustard?", "id": "HON" },
+          { "primaryText": "How do I make pesto?", "id": "PES" },
+          { "primaryText": "How do I make pizza sauce?", "id": "PIZ" },
+          { "primaryText": "How do I make tartar sauce?", "id": "TAR" },
+          { "primaryText": "How do I make thousand island?", "id": "THO" },
+          { "primaryText": "How do I make secret sauce?", "id": "SEC" }
+      ]
+    }
+  }
