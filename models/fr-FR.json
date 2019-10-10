@@ -1,0 +1,206 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "le roi des sauces",
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "LIST_OF_ITEMS",
+                            "samples": [
+                                "la sauce {Item}",
+                                "je veux la recette du {Item}",
+                                "je veux la recette de la sauce {Item}",
+                                "je veux la recette de la {Item}",
+                                "donne-moi la recette de la sauce {Item}",
+                                "Comment préparer une sauce {Item}",
+                                "Comment préparer du {Item}",
+                                "Comment préparer de la {Item}",
+                                "{Item}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "quels sont les ingrédients de la sauce {Item}",
+                        "comment faire la sauce {Item}",
+                        "donne-moi la recette de la sauce {Item}",
+                        "je veux faire une sauce {Item}",
+                        "j'en envie de cuisiner de la sauce {Item}",
+                        "dis-moi comment faire une sauce {Item}",
+                        "quelle est la recette du {Item}",
+                        "quelle est la recette de la {Item}",
+                        "quelle est la recette de la sauce {Item}",
+                        "Comment préparer une sauce {Item}",
+                        "Comment préparer du {Item}",
+                        "Comment préparer de la {Item}",
+                        "la sauce {Item}",
+                        "{Item}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_ITEMS",
+                    "values": [
+                        {
+                            "id": "SEC",
+                            "name": {
+                                "value": "secrète"
+                            }
+                        },
+                        {
+                            "id": "CRA",
+                            "name": {
+                                "value": "canneberge",
+                                "synonyms": [
+                                    "cranberry"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "PIZ",
+                            "name": {
+                                "value": "pizza"
+                            }
+                        },
+                        {
+                            "id": "TAR",
+                            "name": {
+                                "value": "tartare"
+                            }
+                        },
+                        {
+                            "id": "PES",
+                            "name": {
+                                "value": "pesto"
+                            }
+                        },
+                        {
+                            "id": "THO",
+                            "name": {
+                                "value": "mille iles"
+                            }
+                        },
+                        {
+                            "id": "WOR",
+                            "name": {
+                                "value": "worcestershire",
+                                "synonyms": [
+                                    "worcester"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CAE",
+                            "name": {
+                                "value": "césar"
+                            }
+                        },
+                        {
+                            "id": "RAN",
+                            "name": {
+                                "value": "ranch"
+                            }
+                        },
+                        {
+                            "id": "BBQ",
+                            "name": {
+                                "value": "barbecue",
+                                "synonyms": [
+                                    "b. b. q."
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HON",
+                            "name": {
+                                "value": "moutarde au miel",
+                                "synonyms": [
+                                    "moutarde"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "LIST_OF_ITEMS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "ElicitItemPrompt"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "ItemValidationPrompt"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "ElicitItemPrompt",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Quelle sauce voulez-vous cuisiner?"
+                    }
+                ]
+            },
+            {
+                "id": "ItemValidationPrompt",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Désolé, je n'ai pas compris, quelle sauce voulez-vous cuisiner?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "je ne connais pas la recette pour la saauce {Item}.  Quelle sauce souhaitez-vous cuisiner?"
+                    }
+                ]
+            }
+        ]
+    }
+}
