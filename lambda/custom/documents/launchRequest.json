@@ -99,7 +99,42 @@
                             "width": "@imageWidth",
                             "height": "@imageHeight",
                             "borderRadius": "@imageBorderRadius",
-                            "scale": "best-fill"
+                            "scale": "best-fill",
+                            "opacity": "${environment.aplVersion == '1.1' ? 0 : 1}",
+                            "onMount":[
+                                {
+                                    "when": "${environment.aplVersion == '1.1'}",
+                                    "type": "AnimateItem",
+                                    "easing": "ease-in-out",
+                                    "duration": 1000,
+                                    "value":[
+                                        {
+                                            "property": "opacity",
+                                            "to": 1
+                                        },
+                                        {
+                                            "property": "transform",
+                                            "duration": 4000,
+                                            "from":[
+                                                {
+                                                    "translateX": "50"
+                                                },
+                                                {
+                                                    "rotate": 90
+                                                }
+                                            ],
+                                            "to":[
+                                                {
+                                                    "translateX": 0
+                                                },
+                                                {
+                                                    "rotate": 0
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "type": "Text",
@@ -109,16 +144,55 @@
                             "paddingTop": "@textPaddingTop",
                             "fontSize": "@textFontSize",
                             "fontWeight": "@textFontWeight",
-                            "textAlign": "center"
+                            "textAlign": "center",
+                            "opacity": "${environment.aplVersion == '1.1' ? 0 : 1}",
+                            "onMount":[
+                                {
+                                    "when": "${environment.aplVersion == '1.1'}",
+                                    "type": "AnimateItem",
+                                    "duration": 2000,
+                                    "value": {
+                                        "property": "opacity",
+                                        "to": 1
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
-                "onPress": [{
-                    "type": "SendEvent",
-                    "arguments": [
-                        "sauceInstructions",
-                        "${data.id}"
-                    ]}
+                "onPress": [
+                    {
+                        "when": "${environment.aplVersion == '1.1'}",
+                        "type": "AnimateItem",
+                        "easing": "ease-in-out",
+                        "duration": 1000,
+                        "value": [
+                            {
+                                "property": "transform",
+                                "from": [{
+                                        "translateX": 0
+                                    },
+                                    {
+                                        "scale": 1
+                                    }
+                                ],
+                                "to": [{
+                                        "translateX": 0
+                                    },
+                                    {
+                                        "scale": 1.6
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "SendEvent",
+                        "arguments": [
+                            "sauceInstructions",
+                            "${data.id}"
+                        ]
+                    }
                 ]
             }
         }
