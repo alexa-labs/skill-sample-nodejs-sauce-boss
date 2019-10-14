@@ -34,6 +34,29 @@ module.exports = {
             REFLECTOR_MESSAGE: `You just triggered {{intentName}}`
         }
     },
+    hi: {
+        translation: {
+            RECIPES: recipes.en,
+            SKILL_NAME: `सॉस बॉस`,
+            HEADER_TITLE : `{{skillName}} में आपका स्वागत हैं`,
+            RECIPE_HEADER_TITLE : `{{sauce}} बनाने की प्रक्रिया`,
+            HELP_HEADER_TITLE: `मदद`,
+            HELP_HEADER_SUBTITLE: `सॉस को सेलेक्ट करे`,
+            WELCOME_MESSAGE: `{{skillName}} में आपका स्वागत हैं. आप मुझसे {{sauce}} की रेसिपी पूछ सकते हैं. अब आप कौनसा सॉस बनाना चाहेंगे?`,
+            WELCOME_REPROMPT: `मदद के लिए आप कह सकते हैं मेरी मदद करो. आप कौनसा सॉस बनाना चाहेंगे?`,
+            DISPLAY_CARD_TITLE: `{{skillName}}  - {{sauce}} की रेसिपी`,
+            HELP_MESSAGE: `आप मुझसे {{sauce}} की रेसिपी पूछ सकते हैं या फिर रोको बोल सकते हैं. आप कौनसा सॉस बनाना चाहेंगे?`,
+            HELP_REPROMPT: `आप मुझसे {{sauce}} की रेसिपी पूछ सकते हैं या फिर रोको बोल सकते हैं. अब आप कौनसा सॉस बनाना चाहेंगे?`,
+            STOP_MESSAGE: `अलविदा`,
+            RECIPE_REPEAT_MESSAGE: `कृपया रिपीट कहे`,
+            RECIPE_NOT_FOUND_WITH_ITEM_NAME: `माफ़ कीजिए, मुझे फ़िलहाल वो रेसिपी के बारे मैं पता नहीं हैं. आप कौनसा सॉस बनाना चाहेंगे?`,
+            RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME: `माफ़ कीजिए, मुझे फ़िलहाल वो रेसिपी के बारे मैं पता नहीं हैं. आप कौनसा सॉस बनाना चाहेंगे?`,
+            RECIPE_NOT_FOUND_REPROMPT: `आप कौनसा सॉस बनाना चाहेंगे?`,
+            ERROR_MESSAGE: `क्षमा कीजिए, मैं समज नहीं पायी. क्या आप दोहरा सकते हैं ?`,
+            HINT_TEMPLATE: `{{sauce}} सॉस कैसे बनाते हैं?`,
+            REFLECTOR_MESSAGE: `आपने {{intentName}} को ट्रिगर किया हैं`
+        }
+    },
     fr: {
         translation: {
             RECIPES: recipes.fr,

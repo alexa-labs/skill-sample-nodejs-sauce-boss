@@ -53,6 +53,52 @@ module.exports = {
             instructions: `No need to butter me up, I can tell you're in a jam, but the secret sauce is safe with me.`
         }
     },
+    hi: {
+        'HON': {
+            name: `हनी मस्टर्ड`,
+            instructions: `हनी मस्टर्ड सॉस बनाने के लिए मेयनेज़, येलो मस्टर्ड, डिजन मस्टर्ड, हनी और लेमन जूस एक कटोरी में साथ मिलाए. उसके बाद उसे रात भर फ़्रिज में रक दें.`
+        },
+        'BBQ': {
+            name: 'BBQ',
+            instructions: `BBQ sauce बनाने के लिए ब्राउन शुगर, केचप, विनेगर और वुस्टर्शर सॉस को ब्लेंडर मैं दाल दे. फिर सॉल्ट, पेपर और केएन पेपर से सीज़न करे. सॉस स्मूट होने तक ब्लेंड करे.`
+        },
+        'RAN': {
+            name: `रैंच`,
+            instructions: `एक लार्ज बौल मैं मेयनेज़, सौर क्रीम, चाइव्ज़, पार्स्ली, डिल, गार्लिक पाउडर, अन्यन पाउडर, नमक और पेपर को विस्क करे. ३० मिनट्स फ़्रिज में रखे और रैंच सॉस रेडी.`
+        },
+        'CAE': {
+            name: `सीज़र`,
+            instructions: `सीज़र ड्रेसिंग के लिए लेमन जूस, विनेगर, पानी, श्रेडेड पार्मेज़ान चीज़, डीज़ान मस्टर्ड, गार्लिक पाउडर और पेपर को एक बौल मैं मिला ले. फिर उसे बंद करे और अच्छे से शेक करे और इस्तेमाल करने तक फ़्रिज में रक दे.`
+        },
+        'WOR': {
+            name: `Worcestershire`,
+            instructions: `To make Worcestershire sauce, combine apple cider vinegar, water, soy sauce, brown sugar, mustard powder, onion powder, garlic powder, ground cinnamon, and a pinch of black pepper together in a saucepan; bring to a boil and cook until fragrant, about 45 seconds, then cool to room temperature.`
+        },
+        'THO': {
+            name: `Thousand Island`,
+            instructions: `For Thousand Island dressing, mix together mayonnaise, ketchup, sweet pickle relish, salt and pepper in a small bowl until thoroughly combined. Chill and serve.`
+        },
+        'PES': {
+            name: `Pesto`,
+            instructions: `To make pesto, combine basil, garlic, Parmesan cheese, olive oil, and pine nuts in a food processor or blender. Blend to a smooth paste. Add parsley if desired.`
+        },
+        'TAR': {
+            name: `Tartar`,
+            instructions: `For tartar sauce, combine mayonnaise, chopped onion, sweet pickle relish, salt and pepper in a medium bowl. Mix well and let stand for at least 10 minutes before serving.`
+        },
+        'PIZ': {
+            name: `Pizza`,
+            instructions: `To make pizza sauce, mix together tomato sauce and tomato paste in a medium bowl until smooth. Stir in oregano, dried minced garlic and paprika.`
+        },
+        'CRA': {
+            name: `Cranberry`,
+            instructions: `For cranberry sauce, dissolve sugar in orange juice in a saucepan over medium heat. Stir in cranberries and cook until they start to pop. Remove from heat and transfer the sauce to a bowl before serving.`
+        },
+        'SEC': {
+            name: `Secret`,
+            instructions: `No need to butter me up, I can tell you're in a jam, but the secret sauce is safe with me.`
+        }
+    },
     fr: {
         'HON': {
             name: `Moutarde au Miel`,
