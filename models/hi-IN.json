@@ -1,0 +1,195 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sauce boss",
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                      {
+                          "name": "Item",
+                          "type": "LIST_OF_ITEMS",
+                          "samples": [
+                              "मुझे {Item} sauce चाहिए",
+                              "{Item} sauce कैसे बनाते हैं",
+                              "{Item} sauce कैसे बनाए",
+                              "{Item} sauce बनाने मैं मेरी मदद करो",
+                              "{Item} sauce",
+                              "{Item} sauce बनाना सिखाओ",
+                              "{Item} sauce बनाना हैं",
+                              "{Item}"
+                          ]
+                      }
+                  ],
+                    "samples": [
+                        "मैं {Item} कैसे बना सकता हूँ",
+                        "मैं {Item} कैसे बना सकती हूँ",
+                        "मुझे {Item} बनाना सिखाओ",
+                        "मुझे {Item} बनाने मैं मदद करो",
+                        "{Item} कैसे बनाते हैं",
+                        "{Item} कैसे बनाया जाता हैं",
+                        "मुझे {Item} बनाने के लिए क्या चाहिए",
+                        "{Item} बनाने के लिए सामग्री बताओ",
+                        "{Item} बनाने के लिए विधियाँ बताओ",
+                        "{Item} sauce कैसे बनाते हैं",
+                        "{Item} का recipe बताओ",
+                        "{Item} का recipes बताओ",
+                        "{Item}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                  "name": "LIST_OF_ITEMS",
+                  "values": [
+                      {
+                          "id": "SEC",
+                          "name": {
+                              "value": "secret"
+                          }
+                      },
+                      {
+                          "id": "CRA",
+                          "name": {
+                              "value": "cranberry"
+                          }
+                      },
+                      {
+                          "id": "PIZ",
+                          "name": {
+                              "value": "pizza"
+                          }
+                      },
+                      {
+                          "id": "TAR",
+                          "name": {
+                              "value": "tartar"
+                          }
+                      },
+                      {
+                          "id": "PES",
+                          "name": {
+                              "value": "pesto"
+                          }
+                      },
+                      {
+                          "id": "THO",
+                          "name": {
+                              "value": "thousand island"
+                          }
+                      },
+                      {
+                          "id": "WOR",
+                          "name": {
+                              "value": "worcestershire"
+                          }
+                      },
+                      {
+                          "id": "CAE",
+                          "name": {
+                              "value": "caesar"
+                          }
+                      },
+                      {
+                          "id": "RAN",
+                          "name": {
+                              "value": "ranch"
+                          }
+                      },
+                      {
+                          "id": "BBQ",
+                          "name": {
+                              "value": "barbecue",
+                              "synonyms": [
+                                  "b. b. q."
+                              ]
+                          }
+                      },
+                      {
+                          "id": "HON",
+                          "name": {
+                              "value": "honey mustard"
+                          }
+                      }
+                  ]
+              }
+          ]
+      },
+      "dialog": {
+          "intents": [
+              {
+                  "name": "RecipeIntent",
+                  "delegationStrategy": "ALWAYS",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "Item",
+                          "type": "LIST_OF_ITEMS",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "ElicitItemPrompt"
+                          },
+                          "validations": [
+                              {
+                                  "type": "hasEntityResolutionMatch",
+                                  "prompt": "ItemValidationPrompt"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "delegationStrategy": "ALWAYS"
+      },
+      "prompts": [
+          {
+              "id": "ElicitItemPrompt",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Which recipe did you want?"
+                  }
+              ]
+          },
+          {
+              "id": "ItemValidationPrompt",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "I didn't catch that.  Which recipe did you want?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "I don't know the recipe for {Item} .  Which recipe did you want?"
+                  }
+              ]
+          }
+      ]
+  }
+  }
