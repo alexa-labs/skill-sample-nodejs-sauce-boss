@@ -2,7 +2,109 @@
   "manifest": {
     "publishingInformation": {
       "locales": {
-        "en-IN": {
+        "fr-FR": {
+          "name": "Le Roi des Sauces",
+          "summary": "Le roi des Sauces vous aidera à préparer toutes sortes de sauces uniques à partir de condiments de base et d'épices que vous conservez dans votre cuisine.",
+          "description": "Vous avez une passion pour les sauces uniques et intéressantes? Achetez-vous des condiments rares et délicieux seulement pour les faire expirer avant de les utiliser? Vous manquez d'espace dans votre réfrigérateur? Vous faites face au jugement d'amis ou de la famille pour des compétences de cuisine médiocres?!? N'ayez crainte, Le roi des Sauces est là! Le roi des Sauces vous aidera à préparer toutes sortes de sauces fascinantes à partir de condiments de base et d'épices que vous garderez dans votre cuisine. Il suffit de demander au roi des Sauces la sauce que vous souhaitez préparer et vous recevrez une recette simple et facile à suivre pour égayer tous les plats que vous préparez, épater vos parents, satisfaire votre appétit et économiser de l'espace dans votre réfrigérateur. MIAM!!!!",
+          "examplePhrases": [
+            "Alexa, ouvre le roi des sauces",
+            "Alexa, demande le roi des sauces quelle est la recette du pesto",
+            "Alexa, ouvre le roi des sauces et dis-moi comment faire une sauce césar"
+          ],
+          "keywords": [
+            "sauce",
+            "recette",
+            "cuisine"
+          ]
+        },
+        "fr-CA": {
+          "name": "Le Roi des Sauces",
+          "summary": "Le roi des Sauces vous aidera à préparer toutes sortes de sauces uniques à partir de condiments de base et d'épices que vous conservez dans votre cuisine.",
+          "description": "Vous avez une passion pour les sauces uniques et intéressantes? Achetez-vous des condiments rares et délicieux seulement pour les faire expirer avant de les utiliser? Vous manquez d'espace dans votre réfrigérateur? Vous faites face au jugement d'amis ou de la famille pour des compétences de cuisine médiocres?!? N'ayez crainte, Le roi des Sauces est là! Le roi des Sauces vous aidera à préparer toutes sortes de sauces fascinantes à partir de condiments de base et d'épices que vous garderez dans votre cuisine. Il suffit de demander au roi des Sauces la sauce que vous souhaitez préparer et vous recevrez une recette simple et facile à suivre pour égayer tous les plats que vous préparez, épater vos parents, satisfaire votre appétit et économiser de l'espace dans votre réfrigérateur. MIAM!!!!",
+          "examplePhrases": [
+            "Alexa, ouvre le roi des sauces",
+            "Alexa, demande le roi des sauces quelle est la recette du pesto",
+            "Alexa, ouvre le roi des sauces et dis-moi comment faire une sauce césar"
+          ],
+          "keywords": [
+            "sauce",
+            "recette",
+            "cuisine"
+          ]
+        },
+        "es-ES": {
+          "name": "Rey de la Salsa",
+          "summary": "El Rey de la Salsa te ayudará a preparar ricas salsas con condimentos y especias que guardas en tu alacena.",
+          "description": "Eres un salsero y no bailas? Te gusta comprar especias y condimientos pero se quedan en tu alacena hasta que caducan? Te has quedado sin espacio en la nevera? Tus amigos y familia se ríen de tus habilidades culinarias?!? No tengas miedo, El Rey de la Salsa está aquí para ayudarte. Solo dile al Rey de la Salsa qué salsa quieres preparar y te guiará en su preparación para que acompañes cualquier plato e impresiones a tus invitados, satisfagas tu gula y dejes espacio en la nevera. Riquísimo!!!!",
+          "examplePhrases": [
+            "Alexa abre Rey de la Salsa",
+            "Alexa pregunta a Rey de la Salsa cómo se elabora una salsa barbacoa",
+            "Alexa pregunta a Rey de la Salsa como hago salsa barbacoa"
+          ],
+          "keywords": [
+            "salsa",
+            "receta",
+            "cocina",
+            "guisar",
+            "comida",
+            "cómo se hace"
+          ]
+        },
+        "es-MX": {
+          "name": "Rey de la Salsa",
+          "summary": "El Rey de la Salsa te ayudará a preparar ricas salsas con condimentos y especias que guardas en tu alacena.",
+          "description": "Eres un salsero y no bailas? Te gusta comprar especias y condimientos pero se quedan en tu alacena hasta que caducan? Te has quedado sin espacio en la nevera? Tus amigos y familia se ríen de tus habilidades culinarias?!? No tengas miedo, El Rey de la Salsa está aquí para ayudarte. Solo dile al Rey de la Salsa qué salsa quieres preparar y te guiará en su preparación para que acompañes cualquier plato e impresiones a tus invitados, satisfagas tu gula y dejes espacio en la nevera. Riquísimo!!!!",
+          "examplePhrases": [
+            "Alexa abre Rey de la Salsa",
+            "Alexa pregunta a Rey de la Salsa cómo se elabora una salsa barbacoa",
+            "Alexa pregunta a Rey de la Salsa como hago salsa barbacoa"
+          ],
+          "keywords": [
+            "salsa",
+            "receta",
+            "cocina",
+            "guisar",
+            "comida",
+            "cómo se hace"
+          ]
+        },
+        "es-US": {
+          "name": "Rey de la Salsa",
+          "summary": "El Rey de la Salsa te ayudará a preparar ricas salsas con condimentos y especias que guardas en tu alacena.",
+          "description": "Eres un salsero y no bailas? Te gusta comprar especias y condimientos pero se quedan en tu alacena hasta que caducan? Te has quedado sin espacio en la nevera? Tus amigos y familia se ríen de tus habilidades culinarias?!? No tengas miedo, El Rey de la Salsa está aquí para ayudarte. Solo dile al Rey de la Salsa qué salsa quieres preparar y te guiará en su preparación para que acompañes cualquier plato e impresiones a tus invitados, satisfagas tu gula y dejes espacio en la nevera. Riquísimo!!!!",
+          "examplePhrases": [
+            "Alexa abre Rey de la Salsa",
+            "Alexa pregunta a Rey de la Salsa cómo se elabora una salsa barbacoa",
+            "Alexa pregunta a Rey de la Salsa como hago salsa barbacoa"
+          ],
+          "keywords": [
+            "salsa",
+            "receta",
+            "cocina",
+            "guisar",
+            "comida",
+            "cómo se hace"
+          ]
+        },
+        "en-AU": {
+          "name": "Sauce Boss",
+          "summary": "Sauce Boss will help you make all sorts of unique sauces from basic condiments and spices you keep in your kitchen.",
+          "description": "Got a passion for unique and interesting sauces? Do you buy scrumptious, rare condiments only to have them expire before use? Running out of space in your fridge? Facing judgement from friends or family for lackluster cooking skill?!? Have no fear, Sauce Boss is here! Sauce Boss will help you make all sorts of fascinating sauces from basic condiments and spices that you keep around your kitchen. Just ask Sauce Boss for a sauce you want to whip up and you'll receive a simple, easy-to-follow recipe to jazz up any dish you make, wow your folks, please your appetite and save space in your fridge. YUM!!!!",
+          "examplePhrases": [
+            "Alexa open Sauce Boss",
+            "Alexa ask Sauce Boss what's the recipe for barbecue sauce",
+            "Alexa ask Sauce Boss how do I make barbecue sauce"
+          ],
+          "keywords": [
+            "sauce",
+            "recipe",
+            "kitchen",
+            "cooking",
+            "food",
+            "how to"
+          ]
+        },
+        "en-CA": {
           "name": "Sauce Boss",
           "summary": "Sauce Boss will help you make all sorts of unique sauces from basic condiments and spices you keep in your kitchen.",
           "description": "Got a passion for unique and interesting sauces? Do you buy scrumptious, rare condiments only to have them expire before use? Running out of space in your fridge? Facing judgement from friends or family for lackluster cooking skill?!? Have no fear, Sauce Boss is here! Sauce Boss will help you make all sorts of fascinating sauces from basic condiments and spices that you keep around your kitchen. Just ask Sauce Boss for a sauce you want to whip up and you'll receive a simple, easy-to-follow recipe to jazz up any dish you make, wow your folks, please your appetite and save space in your fridge. YUM!!!!",
@@ -21,6 +123,60 @@
           ]
         },
         "hi-IN": {
+          "name": "Sauce Boss",
+          "summary": "Sauce Boss will help you make all sorts of unique sauces from basic condiments and spices you keep in your kitchen.",
+          "description": "Got a passion for unique and interesting sauces? Do you buy scrumptious, rare condiments only to have them expire before use? Running out of space in your fridge? Facing judgement from friends or family for lackluster cooking skill?!? Have no fear, Sauce Boss is here! Sauce Boss will help you make all sorts of fascinating sauces from basic condiments and spices that you keep around your kitchen. Just ask Sauce Boss for a sauce you want to whip up and you'll receive a simple, easy-to-follow recipe to jazz up any dish you make, wow your folks, please your appetite and save space in your fridge. YUM!!!!",
+          "examplePhrases": [
+            "Alexa open Sauce Boss",
+            "Alexa ask Sauce Boss what's the recipe for barbecue sauce",
+            "Alexa ask Sauce Boss how do I make barbecue sauce"
+          ],
+          "keywords": [
+            "sauce",
+            "recipe",
+            "kitchen",
+            "cooking",
+            "food",
+            "how to"
+          ]
+        },
+        "en-GB": {
+          "name": "Sauce Boss",
+          "summary": "Sauce Boss will help you make all sorts of unique sauces from basic condiments and spices you keep in your kitchen.",
+          "description": "Got a passion for unique and interesting sauces? Do you buy scrumptious, rare condiments only to have them expire before use? Running out of space in your fridge? Facing judgement from friends or family for lackluster cooking skill?!? Have no fear, Sauce Boss is here! Sauce Boss will help you make all sorts of fascinating sauces from basic condiments and spices that you keep around your kitchen. Just ask Sauce Boss for a sauce you want to whip up and you'll receive a simple, easy-to-follow recipe to jazz up any dish you make, wow your folks, please your appetite and save space in your fridge. YUM!!!!",
+          "examplePhrases": [
+            "Alexa open Sauce Boss",
+            "Alexa ask Sauce Boss what's the recipe for barbecue sauce",
+            "Alexa ask Sauce Boss how do I make barbecue sauce"
+          ],
+          "keywords": [
+            "sauce",
+            "recipe",
+            "kitchen",
+            "cooking",
+            "food",
+            "how to"
+          ]
+        },
+        "en-IN": {
+          "name": "Sauce Boss",
+          "summary": "Sauce Boss will help you make all sorts of unique sauces from basic condiments and spices you keep in your kitchen.",
+          "description": "Got a passion for unique and interesting sauces? Do you buy scrumptious, rare condiments only to have them expire before use? Running out of space in your fridge? Facing judgement from friends or family for lackluster cooking skill?!? Have no fear, Sauce Boss is here! Sauce Boss will help you make all sorts of fascinating sauces from basic condiments and spices that you keep around your kitchen. Just ask Sauce Boss for a sauce you want to whip up and you'll receive a simple, easy-to-follow recipe to jazz up any dish you make, wow your folks, please your appetite and save space in your fridge. YUM!!!!",
+          "examplePhrases": [
+            "Alexa open Sauce Boss",
+            "Alexa ask Sauce Boss what's the recipe for barbecue sauce",
+            "Alexa ask Sauce Boss how do I make barbecue sauce"
+          ],
+          "keywords": [
+            "sauce",
+            "recipe",
+            "kitchen",
+            "cooking",
+            "food",
+            "how to"
+          ]
+        },
+        "en-US": {
           "name": "Sauce Boss",
           "summary": "Sauce Boss will help you make all sorts of unique sauces from basic condiments and spices you keep in your kitchen.",
           "description": "Got a passion for unique and interesting sauces? Do you buy scrumptious, rare condiments only to have them expire before use? Running out of space in your fridge? Facing judgement from friends or family for lackluster cooking skill?!? Have no fear, Sauce Boss is here! Sauce Boss will help you make all sorts of fascinating sauces from basic condiments and spices that you keep around your kitchen. Just ask Sauce Boss for a sauce you want to whip up and you'll receive a simple, easy-to-follow recipe to jazz up any dish you make, wow your folks, please your appetite and save space in your fridge. YUM!!!!",
