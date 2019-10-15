@@ -1,0 +1,250 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "ソースボス",
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "LIST_OF_ITEMS",
+                            "samples": [
+                                "{Item} ソース",
+                                "{Item} ソースが欲しい",
+                                "{Item} ソースがいいな",
+                                "{Item} ドレッシング",
+                                "{Item} ドレッシングが欲しい",
+                                "{Item} ドレッシングがいいな",
+                                "{Item} はどうかな",
+                                "{Item} のレシピを教えて",
+                                "{Item}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{Item}",
+                        "{Item} ソース",
+                        "{Item} ドレッシング",
+                        "{Item} の作り方",
+                        "{Item} の作り方を教えて",
+                        "{Item} はどうやって作る",
+                        "{Item} に必要な材料は何",
+                        "{Item} を作りたい",
+                        "{Item} を作るにはどうしたらいい",
+                        "{Item} のレシピを教えて",
+                        "{Item} のレシピ",
+                        "{Item} のレシピが欲しい",
+                        "{Item} のレシピをください",
+                        "{Item} のレシピを出して",
+                        "{Item} の材料を教えて",
+                        "{Item} を作るのに必要な材料は",
+                        "{Item} はどう",
+                        "{Item} はどうかな",
+                        "{Item} には何が入っている",
+                        "{Item} には何が入ってる",
+                        "{Item} に入っている物は何",
+                        "{Item} に入っている物を教えて",
+                        "{Item} ソースの作り方",
+                        "{Item} ソースの作り方を教えて",
+                        "{Item} ソースはどうやって作る",
+                        "{Item} ソースに必要な材料は何",
+                        "{Item} ソースを作りたい",
+                        "{Item} ソースを作るにはどうしたらいい",
+                        "{Item} ソースのレシピを教えて",
+                        "{Item} ソースのレシピ",
+                        "{Item} ソースのレシピが欲しい",
+                        "{Item} ソースのレシピをください",
+                        "{Item} ソースのレシピを出して",
+                        "{Item} ソースの材料を教えて",
+                        "{Item} ソースを作るのに必要な材料は",
+                        "{Item} ソースはどう",
+                        "{Item} ソースはどうかな",
+                        "{Item} ソースには何が入っている",
+                        "{Item} ソースには何が入ってる",
+                        "{Item} ソースに入っている物は何",
+                        "{Item} ソースに入っている物を教えて",
+                        "{Item} ドレッシングの作り方",
+                        "{Item} ドレッシングの作り方を教えて",
+                        "{Item} ドレッシングはどうやって作る",
+                        "{Item} ドレッシングに必要な材料は何",
+                        "{Item} ドレッシングを作りたい",
+                        "{Item} ドレッシングを作るにはどうしたらいい",
+                        "{Item} ドレッシングのレシピを教えて",
+                        "{Item} ドレッシングのレシピ",
+                        "{Item} ドレッシングのレシピが欲しい",
+                        "{Item} ドレッシングのレシピをください",
+                        "{Item} ドレッシングのレシピを出して",
+                        "{Item} ドレッシングの材料を教えて",
+                        "{Item} ドレッシングを作るのに必要な材料は",
+                        "{Item} ドレッシングはどう",
+                        "{Item} ドレッシングはどうかな",
+                        "{Item} ドレッシングには何が入っている",
+                        "{Item} ドレッシングには何が入ってる",
+                        "{Item} ドレッシングに入っている物は何",
+                        "{Item} ドレッシングに入っている物を教えて"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_ITEMS",
+                    "values": [
+                        {
+                            "id": "SEC",
+                            "name": {
+                                "value": "シークレット"
+                            }
+                        },
+                        {
+                            "id": "CRA",
+                            "name": {
+                                "value": "クランベリー"
+                            }
+                        },
+                        {
+                            "id": "PIZ",
+                            "name": {
+                                "value": "ピザ"
+                            }
+                        },
+                        {
+                            "id": "TAR",
+                            "name": {
+                                "value": "タルタル"
+                            }
+                        },
+                        {
+                            "id": "PES",
+                            "name": {
+                                "value": "ペスト"
+                            }
+                        },
+                        {
+                            "id": "THO",
+                            "name": {
+                                "value": "サウザンドアイランド"
+                            },
+                            "synonyms": [
+                                "サウザンアイランド",
+                                "サザンアイランド"
+                            ]
+                        },
+                        {
+                            "id": "WOR",
+                            "name": {
+                                "value": "ウスター"
+                            }
+                        },
+                        {
+                            "id": "CAE",
+                            "name": {
+                                "value": "シーザー"
+                            }
+                        },
+                        {
+                            "id": "RAN",
+                            "name": {
+                                "value": "ランチ"
+                            },
+                            "synonyms": [
+                                "牧場"
+                            ]
+                        },
+                        {
+                            "id": "BBQ",
+                            "name": {
+                                "value": "バーベキュー",
+                                "synonyms": [
+                                    "b. b. q."
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HON",
+                            "name": {
+                                "value": "ハニーマスタード"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "LIST_OF_ITEMS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "ElicitItemPrompt"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "ItemValidationPrompt"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "ElicitItemPrompt",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "どのソースのレシピを知りたいですか？"
+                    }
+                ]
+            },
+            {
+                "id": "ItemValidationPrompt",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "うまく聞き取れませんでした。どのソースのレシピを知りたいですか？"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "ごめんなさい。{Item} のレシピは知りません。他に、どのソースのレシピを知りたいですか？"
+                    }
+                ]
+            }
+        ]
+    }
+}
