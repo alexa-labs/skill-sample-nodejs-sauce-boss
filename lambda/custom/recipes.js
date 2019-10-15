@@ -71,32 +71,32 @@ module.exports = {
             instructions: `सीज़र ड्रेसिंग के लिए लेमन जूस, विनेगर, पानी, श्रेडेड पार्मेज़ान चीज़, डीज़ान मस्टर्ड, गार्लिक पाउडर और पेपर को एक बौल मैं मिला ले. फिर उसे बंद करे और अच्छे से शेक करे और इस्तेमाल करने तक फ़्रिज में रक दे.`
         },
         'WOR': {
-            name: `Worcestershire`,
-            instructions: `To make Worcestershire sauce, combine apple cider vinegar, water, soy sauce, brown sugar, mustard powder, onion powder, garlic powder, ground cinnamon, and a pinch of black pepper together in a saucepan; bring to a boil and cook until fragrant, about 45 seconds, then cool to room temperature.`
+            name: `वुस्टर्शर`,
+            instructions: `वुस्टर्शर सॉस बनाने के लिए ऐपल साइडर विनेगर, पानी, सोई सॉस, ब्राउन शुगर, मस्टर्ड पाउडर, अन्यन पाउडर, गार्लिक पाउडर, ग्राउंड सिनमॉन और काली मिर्च मिलाले. फिर तक़रीबन ४५ सेकंड्ज़ उसे गरम करे और फिर ठंडा करके सर्व करे`
         },
         'THO': {
-            name: `Thousand Island`,
-            instructions: `For Thousand Island dressing, mix together mayonnaise, ketchup, sweet pickle relish, salt and pepper in a small bowl until thoroughly combined. Chill and serve.`
+            name: `थाउज़ंड आयलंड`,
+            instructions: `थाउज़ंड आयलंड ड्रेसिंग के लिए, मयोनीस, केचप, स्वीट पिकल रेलिश, नमक और काली मिर्च एक कटोरी में मिला ले. उसके बाद फ़्रिज में रखे और फिर परोसे.`
         },
         'PES': {
-            name: `Pesto`,
-            instructions: `To make pesto, combine basil, garlic, Parmesan cheese, olive oil, and pine nuts in a food processor or blender. Blend to a smooth paste. Add parsley if desired.`
+            name: `पेस्टो`,
+            instructions: `फ़ूड प्रॉसेसर या ब्लेंडर में बेज़िल, गार्लिक, पार्मेज़ान चीज़, ऑलिव ओयल और पाइन नट्स मिलाए और स्मूथ ब्लेंड करे. अगर आप चाहे तो आप पार्स्ली भी मिला सकते हैं.`
         },
         'TAR': {
-            name: `Tartar`,
-            instructions: `For tartar sauce, combine mayonnaise, chopped onion, sweet pickle relish, salt and pepper in a medium bowl. Mix well and let stand for at least 10 minutes before serving.`
+            name: `टरटर`,
+            instructions: `टरटर सॉस बनाने के लिए मयोनीस, कटा हुआ प्याज़, स्वीट पिकल रेलिश, नमक और काली मिर्च मिला ले और तक़रीबन दस मिनट के बाद सर्व करे`
         },
         'PIZ': {
-            name: `Pizza`,
-            instructions: `To make pizza sauce, mix together tomato sauce and tomato paste in a medium bowl until smooth. Stir in oregano, dried minced garlic and paprika.`
+            name: `पिज़्ज़ा`,
+            instructions: `पिज़्ज़ा सॉस बनाने के लिए टमाटर सॉस और टमाटर पेस्ट में मिलाके मिक्स करे. उसके बाद ओरेगनो, लहसुन और पप्रीका मिलाए. आपका सॉस रेडी हैं.`
         },
         'CRA': {
-            name: `Cranberry`,
-            instructions: `For cranberry sauce, dissolve sugar in orange juice in a saucepan over medium heat. Stir in cranberries and cook until they start to pop. Remove from heat and transfer the sauce to a bowl before serving.`
+            name: `क्रैन्बेरी`,
+            instructions: `क्रैन्बेरी सॉस के लिए धीमे आँच पर, ऑरेंज जूस मैं शक्कर मिलाए. क्रैन्बेरी मिलाए और उनके पोप होने तक पकाए. आपका सॉस रेडी हैं.`
         },
         'SEC': {
-            name: `Secret`,
-            instructions: `No need to butter me up, I can tell you're in a jam, but the secret sauce is safe with me.`
+            name: `सीक्रेट`,
+            instructions: `आपका सीक्रेट सॉस मेरे साथ सेफ़ हैं.`
         }
     },
     fr: {

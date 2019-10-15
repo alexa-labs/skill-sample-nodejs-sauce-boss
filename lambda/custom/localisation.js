@@ -36,7 +36,7 @@ module.exports = {
     },
     hi: {
         translation: {
-            RECIPES: recipes.en,
+            RECIPES: recipes.hi,
             SKILL_NAME: `सॉस बॉस`,
             HEADER_TITLE : `{{skillName}} में आपका स्वागत हैं`,
             RECIPE_HEADER_TITLE : `{{sauce}} बनाने की प्रक्रिया`,
