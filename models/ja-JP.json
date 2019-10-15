@@ -171,17 +171,13 @@
                             "name": {
                                 "value": "ランチ"
                             },
-                            "synonyms": [
-                                "牧場"
-                            ]
+                            "synonyms": ["牧場"]
                         },
                         {
                             "id": "BBQ",
                             "name": {
                                 "value": "バーベキュー",
-                                "synonyms": [
-                                    "b. b. q."
-                                ]
+                                "synonyms": ["b. b. q."]
                             }
                         },
                         {
