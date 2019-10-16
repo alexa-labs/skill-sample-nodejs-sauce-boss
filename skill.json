@@ -11,11 +11,7 @@
             "Alexa, demande le roi des sauces quelle est la recette du pesto",
             "Alexa, ouvre le roi des sauces et dis-moi comment faire une sauce césar"
           ],
-          "keywords": [
-            "sauce",
-            "recette",
-            "cuisine"
-          ]
+          "keywords": ["sauce", "recette", "cuisine"]
         },
         "fr-CA": {
           "name": "Le Roi des Sauces",
@@ -26,11 +22,7 @@
             "Alexa, demande le roi des sauces quelle est la recette du pesto",
             "Alexa, ouvre le roi des sauces et dis-moi comment faire une sauce césar"
           ],
-          "keywords": [
-            "sauce",
-            "recette",
-            "cuisine"
-          ]
+          "keywords": ["sauce", "recette", "cuisine"]
         },
         "es-ES": {
           "name": "Rey de la Salsa",
@@ -192,6 +184,24 @@
             "cooking",
             "food",
             "how to"
+          ]
+        },
+        "ja-JP": {
+          "name": "ソースボス",
+          "summary": "ソースボスは、キッチンにある基本的な調味料やスパイスを使って、いろんな種類のユニークなソースを作るお手伝いをします。",
+          "description": "ユニークで面白いソースを作ってみたいと思ったことはありませんか？ せっかく珍しい調味料を買っても期限切れにしてしまうことはありませんか？ 冷蔵庫のスペースが足りなくなっていませんか？ 友人や家族からお料理が下手だというレッテルを貼られたりしていませんか？ そんなあなたのために、ソースボスがお手伝いします！ソースボスは、キッチンにある基本的な調味料やスパイスを使って、色々な種類の魅力的なソースを作るお手伝いをします。ソースボスに作りたいソースの名前を言うだけで、簡単でわかりやすいレシピを教えてくれます。料理を盛り上げて、みんなをあっと言わせましょう。食欲をそそり、冷蔵庫のスペースも節約できます。 うーん、美味しいね？",
+          "examplePhrases": [
+            "アレクサ、ソースボスを開いて",
+            "アレクサ、ソースボスを開いて、バーベキューソースの作り方を教えて",
+            "アレクサ、ソースボスのベーべキューソースのレシピを教えて"
+          ],
+          "keywords": [
+            "ソース",
+            "レシピ",
+            "キッチン",
+            "料理",
+            "食べ物",
+            "ハウツー"
           ]
         }
       },

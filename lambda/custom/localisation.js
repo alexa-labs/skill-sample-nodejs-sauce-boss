@@ -7,7 +7,7 @@
  */
 
 // List of localized recipes (all locales)
-const recipes = require('./recipes');
+const recipes = require("./recipes");
 
 // List of localized strings (all locales)
 module.exports = {
@@ -15,8 +15,8 @@ module.exports = {
         translation: {
             RECIPES: recipes.en,
             SKILL_NAME: `Sauce Boss`,
-            HEADER_TITLE : `Welcome to {{skillName}}`,
-            RECIPE_HEADER_TITLE : `HOW TO MAKE {{sauce}} SAUCE`,
+            HEADER_TITLE: `Welcome to {{skillName}}`,
+            RECIPE_HEADER_TITLE: `HOW TO MAKE {{sauce}} SAUCE`,
             HELP_HEADER_TITLE: `HELP`,
             HELP_HEADER_SUBTITLE: `Select the sauce you want to prepare`,
             WELCOME_MESSAGE: `Welcome to {{skillName}}. You can ask a question like, what's the recipe for {{sauce}} sauce? ... Now, which sauce would you like to prepare?`,
@@ -61,8 +61,8 @@ module.exports = {
         translation: {
             RECIPES: recipes.fr,
             SKILL_NAME: `Le Roi des Sauces`,
-            HEADER_TITLE : `Bienvenue chez {{skillName}}`,
-            RECIPE_HEADER_TITLE : `PREPARATION POUR SAUCE {{sauce}}`,
+            HEADER_TITLE: `Bienvenue chez {{skillName}}`,
+            RECIPE_HEADER_TITLE: `PREPARATION POUR SAUCE {{sauce}}`,
             HELP_HEADER_TITLE: `AIDE`,
             HELP_HEADER_SUBTITLE: `Sélectionnez la sauce que vous souhaitez cuisiner`,
             WELCOME_MESSAGE: `Bienvenue chez {{skillName}}. Je vous accompagne dans la conception de vos sauces culinaires. Pour me demander la recette d'une sauce, il suffit de me dire par exemple "Quelle est la recette de la sauce {{sauce}}?" ... Quelle sauce souhaitez-vous cuisiner?`,
@@ -84,8 +84,8 @@ module.exports = {
         translation: {
             RECIPES: recipes.es,
             SKILL_NAME: `Rey de la Salsa`,
-            HEADER_TITLE : `Bienvenidos al {{skillName}}`,
-            RECIPE_HEADER_TITLE : `COMO HACER SALSA {{sauce}}`,
+            HEADER_TITLE: `Bienvenidos al {{skillName}}`,
+            RECIPE_HEADER_TITLE: `COMO HACER SALSA {{sauce}}`,
             HELP_HEADER_TITLE: `AYUDA`,
             HELP_HEADER_SUBTITLE: `Selecciona la salsa que quieres cocinar`,
             WELCOME_MESSAGE: `Bienvenidos al {{skillName}}. Puedes hacerme una pregunta como, "Cuál es la receta de la salsa {{sauce}}?" ... Bien, qué salsa quieres cocinar?`,
@@ -102,5 +102,28 @@ module.exports = {
             HINT_TEMPLATE: `Cómo puedo elaborar salsa {{sauce}}?`,
             REFLECTOR_MESSAGE: `Acabas de activar {{intentName}}`
         }
+    },
+    "ja-JP": {
+        translation: {
+            RECIPES: recipes.jp,
+            SKILL_NAME: `ソースボス`,
+            HEADER_TITLE: `ようこそ{{skillName}}へ`,
+            RECIPE_HEADER_TITLE: `{{sauce}}ソースの作り方`,
+            HELP_HEADER_TITLE: `ヘルプ`,
+            HELP_HEADER_SUBTITLE: `作りたいソースを選んでください。`,
+            WELCOME_MESSAGE: `{{skillName}}へようこそ。「{{sauce}}の作り方を教えて。」のように聞くことができます。きょうはどんなソースを作りたいですか？`,
+            WELCOME_REPROMPT: `使い方を知りたい場合は、「ヘルプ」と言ってください。きょうはどんなソースを作りたいですか？`,
+            DISPLAY_CARD_TITLE: `{{skillName}}  - {{sauce}}のレシピ`,
+            HELP_MESSAGE: `「{{sauce}}の作り方を教えて。」のように聞くことができます。終わりたい場合は「終了。」と言ってください。きょうはどんなソースを作りたいですか？`,
+            HELP_REPROMPT: `「{{sauce}}の作り方を教えて。」のように聞くことができます。終わりたい場合は「終了。」と言ってください。きょうはどんなソースを作りたいですか？`,
+            STOP_MESSAGE: `さようなら!`,
+            RECIPE_REPEAT_MESSAGE: `リピートと言ってみて。`,
+            RECIPE_NOT_FOUND_WITH_ITEM_NAME: `ごめんなさい。{{sauce}}ソースの作り方は知りません。他にどんなソースを作りたいですか？`,
+            RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME: `ごめんなさい。そのソースの作り方は知りません。他にどんなソースを作りたいですか？`,
+            RECIPE_NOT_FOUND_REPROMPT: `他にどんなソースを作りたいですか？`,
+            ERROR_MESSAGE: `すみません。うまく理解できませんでした。もう一度言ってみてください。`,
+            HINT_TEMPLATE: `{{sauce}}ソースの作り方を教えて？`,
+            REFLECTOR_MESSAGE: `You just triggered {{intentName}}`
+        }
     }
-}
+};
