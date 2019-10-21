@@ -203,6 +203,26 @@
             "食べ物",
             "ハウツー"
           ]
+        },
+        "de-DE": {
+          "name": "Saucen-Meister",
+          "summary": "Saucen-Meister hilft Dir, aus einfachen Zutaten leckere Saucen und Dressings zu zaubern.",
+          "description": "Kannst auch Du der Verführung köstlicher Saucen und Dressings nicht widerstehen? Kaufst Du erlesene Zutaten, und lässt sie nach wenigen Nutzungen im Gewürzregal verstauben? Geht Dein Platz im Kühlschrank zur Neige? Sind Deine opulenten Kochgewohnheiten der Running Gag Deines Freundeskreises?!? Dann ist Sauchen-Meister genau das richtige für Dich! Mit Saucen-Meister bereitest Du köstliche Saucen und Dressings aus schlichten, haushaltsüblichen Zutaten. Frag den Saucen-Meister einfach nach der Sauce oder dem Dressing Deiner Wahl, und Du bekommst eine einfache, leicht nachvollziehbare Kochanleitung. Viel Spaß beim Kochen, Freunde beeindrucken und Geld sparen! :)",
+          "examplePhrases": [
+            "Alexa, starte Saucen Meister",
+            "Alexa, frag Saucen Meister nach dem Rezept für Barbecue-Sauce",
+            "Alexa, frag Saucen Meister wie man Barbecue-Sauce macht"
+          ],
+          "keywords": [
+            "sauce",
+            "soße",
+            "dressing",
+            "rezept",
+            "küche",
+            "kochen",
+            "zubereitung",
+            "anleitung"
+          ]
         }
       },
       "isAvailableWorldwide": true,
