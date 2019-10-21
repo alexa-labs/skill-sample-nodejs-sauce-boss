@@ -125,5 +125,28 @@ module.exports = {
             HINT_TEMPLATE: `{{sauce}}ソースの作り方を教えて？`,
             REFLECTOR_MESSAGE: `You just triggered {{intentName}}`
         }
+    },
+    de: {
+        translation: {
+            RECIPES: recipes.de,
+            SKILL_NAME: `Saucen Boss`,
+            HEADER_TITLE : `Wilkommen bei {{skillName}}`,
+            RECIPE_HEADER_TITLE : `{{sauce}} SAUCE ZUBEREITEN`,
+            HELP_HEADER_TITLE: `HILFE`,
+            HELP_HEADER_SUBTITLE: `Wähle Deine gewünschte Sauce`,
+            WELCOME_MESSAGE: `Willkommen bei {{skillName}}. Du kannst mich zum Beispiel fragen, wie macht man eine {{sauce}} Sauce? ... Welche Sauce würdest Du jetzt gerne zubereiten?`,
+            WELCOME_REPROMPT: `Um zu hören was Du sagen kannst, sag einfach Hilfe.  Welche Sauce möchstest Du nun zubereiten?`,
+            DISPLAY_CARD_TITLE: `{{skillName}}  - Rezept für {{sauce}} Sauce`,
+            HELP_MESSAGE: `Du kannst zum Beispiel fragen, wie bereitet man eine {{sauce}} Sauce zu. Oder Du kannst Stop sagen, um diesen  Skill zu beenden... Also, welche Sauce möchtest Du zubereiten?`,
+            HELP_REPROMPT: `Du kannst zum Beispiel sagen, wie geht eine {{sauce}} Sauce, oder Stop, um den Skill zu beenden. Also, welche Sauce darf es sein?`,
+            STOP_MESSAGE: `Machs gut!`,
+            RECIPE_REPEAT_MESSAGE: `Versuch doch mal zu sagen, wiederholen.`,
+            RECIPE_NOT_FOUND_WITH_ITEM_NAME: `Aktuell kenne ich noch kein Rezept für {{sauce}} Sauce. Welche andere Sauce darf es sein?`,
+            RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME: `Dieses Rezept kenne ich leider noch nicht. Welche andere Sauce darf es sein?`,
+            RECIPE_NOT_FOUND_REPROMPT: `Welche andere Sauce möchtest Du zubereiten?`,
+            ERROR_MESSAGE: `Das habe ich leider nicht verstanden. Kannst Du das bitte nochmal anders formulieren?`,
+            HINT_TEMPLATE: `Wie ist das Rezept für {{sauce}} Sauce?`,
+            REFLECTOR_MESSAGE: `Du hast den {{intentName}} ausgelöst.`
+        }
     }
 };

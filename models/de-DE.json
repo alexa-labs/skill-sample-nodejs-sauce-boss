@@ -1,0 +1,337 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "saucen meister",
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "LIST_OF_ITEMS",
+                            "samples": [
+                                "Ich will die {Item} sauce",
+                                "Ich will die {Item} soße",
+                                "Ich will das {Item} dressing",
+                                "Ich will eine {Item} sauce",
+                                "Ich will eine {Item} soße",
+                                "Ich will ein {Item} dressing",
+                                "Ich will {Item} sauce",
+                                "Ich will {Item} soße",
+                                "Ich will {Item} dressing",
+                                "{Item} sauce klingt gut",
+                                "{Item} soße klingt gut",
+                                "wie wärs mit {Item}",
+                                "{Item} sauce",
+                                "{Item} soße",
+                                "{Item} dressing",
+                                "ein rezept für {Item} sauce",
+                                "ein rezept für {Item} soße",
+                                "ein rezept für {Item} dressing",
+                                "{Item}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "wie mache ich {Item}",
+                        "wie mache ich {Item} sauce",
+                        "wie mache ich {Item} soße",
+                        "wie mache ich {Item} dressing",
+                        "wie mache ich eine {Item}",
+                        "wie mache ich eine {Item} sauce",
+                        "wie mache ich eine {Item} soße",
+                        "wie mache ich eine {Item} dressing",
+                        "wie koche ich {Item}",
+                        "wie koche ich {Item} sauce",
+                        "wie koche ich {Item} soße",
+                        "wie koche ich {Item} dressing",
+                        "wie koche ich eine {Item}",
+                        "wie koche ich eine {Item} sauce",
+                        "wie koche ich eine {Item} soße",
+                        "wie koche ich eine {Item} dressing",
+                        "wie kann ich {Item}  machen",
+                        "wie kann ich {Item}  kochen",
+                        "wie kann ich {Item}  dressing",
+                        "wie kann ich {Item}  zubereiten",
+                        "wie kann ich {Item} sauce machen",
+                        "wie kann ich {Item} sauce kochen",
+                        "wie kann ich {Item} sauce zubereiten",
+                        "wie kann ich {Item} soße machen",
+                        "wie kann ich {Item} soße kochen",
+                        "wie kann ich {Item} soße zubereiten",
+                        "wie kann ich {Item} dressing machen",
+                        "wie kann ich {Item} dressing kochen",
+                        "wie kann ich {Item} dressing zubereiten",
+                        "wie kann ich eine {Item} machen",
+                        "wie kann ich eine {Item} kochen",
+                        "wie kann ich eine {Item} zubereiten",
+                        "wie kann ich eine {Item} sauce machen",
+                        "wie kann ich eine {Item} sauce kochen",
+                        "wie kann ich eine {Item} sauce zubereiten",
+                        "wie kann ich eine {Item} soße machen",
+                        "wie kann ich eine {Item} soße kochen",
+                        "wie kann ich eine {Item} soße zubereiten",
+                        "wie kann ich ein {Item} dressing machen",
+                        "wie kann ich ein {Item} dressing kochen",
+                        "wie kann ich ein {Item} dressing zubereiten",
+                        "wie bereite ich {Item}  zu",
+                        "wie bereite ich {Item} sauce zu",
+                        "wie bereite ich {Item} soße zu",
+                        "wie bereite ich {Item} dressing zu",
+                        "wie bereite ich eine {Item} zu",
+                        "wie bereite ich eine {Item} sauce zu",
+                        "wie bereite ich eine {Item} soße zu",
+                        "wie bereite ich eine {Item} dressing zu",
+                        "wie geht {Item}",
+                        "wie geht {Item} sauce",
+                        "wie geht {Item} soße",
+                        "wie geht {Item} dressing",
+                        "wie geht eine {Item}",
+                        "wie geht eine {Item} sauce",
+                        "wie geht eine {Item} soße",
+                        "wie geht ein {Item} dressing",
+                        "wie wird {Item}  gemacht",
+                        "wie wird {Item}  zubereitet",
+                        "wie wird {Item}  gekocht",
+                        "wie wird {Item} sauce gemacht",
+                        "wie wird {Item} sauce zubereitet",
+                        "wie wird {Item} sauce gekocht",
+                        "wie wird {Item} soße gemacht",
+                        "wie wird {Item} soße zubereitet",
+                        "wie wird {Item} soße gekocht",
+                        "wie wird {Item} dressing gemacht",
+                        "wie wird {Item} dressing zubereitet",
+                        "wie wird {Item} dressing gekocht",
+                        "wie wird eine {Item} gemacht",
+                        "wie wird eine {Item} zubereitet",
+                        "wie wird eine {Item} gekocht",
+                        "wie wird eine {Item} sauce gemacht",
+                        "wie wird eine {Item} sauce zubereitet",
+                        "wie wird eine {Item} sauce gekocht",
+                        "wie wird eine {Item} soße gemacht",
+                        "wie wird eine {Item} soße zubereitet",
+                        "wie wird eine {Item} soße gekocht",
+                        "wie wird eine {Item} dressing gemacht",
+                        "wie wird eine {Item} dressing zubereitet",
+                        "wie wird eine {Item} dressing gekocht",
+                        "was brauche ich für {Item}",
+                        "was brauche ich für {Item} sauce",
+                        "was brauche ich für {Item} soße",
+                        "was brauche ich für {Item} dressing",
+                        "was brauche ich für eine {Item}",
+                        "was brauche ich für eine {Item} sauce",
+                        "was brauche ich für eine {Item} soße",
+                        "was brauche ich für eine {Item} dressing",
+                        "was braucht man für {Item}",
+                        "was braucht man für {Item} sauce",
+                        "was braucht man für {Item} soße",
+                        "was braucht man für {Item} dressing",
+                        "was braucht man für eine {Item}",
+                        "was braucht man für eine {Item} sauce",
+                        "was braucht man für eine {Item} soße",
+                        "was braucht man für eine {Item} dressing",
+                        "was sind die zutaten für {Item}",
+                        "was sind die zutaten für {Item} sauce",
+                        "was sind die zutaten für {Item} soße",
+                        "was sind die zutaten für {Item} dressing",
+                        "was sind die zutaten für eine {Item}",
+                        "was sind die zutaten für eine {Item} sauce",
+                        "was sind die zutaten für eine {Item} soße",
+                        "was sind die zutaten für eine {Item} dressing",
+                        "was ist in {Item}",
+                        "was ist in {Item} sauce",
+                        "was ist in {Item} soße",
+                        "was ist in {Item} dressing",
+                        "was ist in einer {Item}",
+                        "was ist in einer {Item} sauce",
+                        "was ist in einer {Item} soße",
+                        "was ist in einer {Item} dressing",
+                        "rezept für {Item}",
+                        "rezept für {Item} sauce",
+                        "rezept für {Item} soße",
+                        "rezept für {Item} dressing",
+                        "das rezept für {Item}",
+                        "das rezept für {Item} sauce",
+                        "das rezept für {Item} soße",
+                        "das rezept für {Item} dressing",
+                        "wie ist das rezept für {Item}",
+                        "wie ist das rezept für {Item} sauce",
+                        "wie ist das rezept für {Item} soße",
+                        "wie ist das rezept für {Item} dressing",
+                        "wie geht {Item}",
+                        "wie geht {Item} sauce",
+                        "wie geht {Item} soße",
+                        "wie geht {Item} dressing",
+                        "wie geht das rezept für {Item}",
+                        "wie geht das rezept für {Item} sauce",
+                        "wie geht das rezept für {Item} soße",
+                        "wie geht das rezept für {Item} dressing",
+                        "{Item}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_ITEMS",
+                    "values": [
+                        {
+                            "id": "SEC",
+                            "name": {
+                                "value": "geheime",
+                                "synonyms": [
+                                    "geheim"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CRA",
+                            "name": {
+                                "value": "cranberry"
+                            }
+                        },
+                        {
+                            "id": "PIZ",
+                            "name": {
+                                "value": "pizza"
+                            }
+                        },
+                        {
+                            "id": "TAR",
+                            "name": {
+                                "value": "hackfleisch",
+                                "synonyms": [
+                                    "tartar"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "PES",
+                            "name": {
+                                "value": "pesto"
+                            }
+                        },
+                        {
+                            "id": "THO",
+                            "name": {
+                                "value": "tausend insel"
+                            }
+                        },
+                        {
+                            "id": "WOR",
+                            "name": {
+                                "value": "worcester"
+                            }
+                        },
+                        {
+                            "id": "CAE",
+                            "name": {
+                                "value": "caesar",
+                                "synonyms": [
+                                    "cäsar",
+                                    "zäsar"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "RAN",
+                            "name": {
+                                "value": "ranch"
+                            }
+                        },
+                        {
+                            "id": "BBQ",
+                            "name": {
+                                "value": "barbecue",
+                                "synonyms": [
+                                    "b. b. q."
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HON",
+                            "name": {
+                                "value": "honig senf"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "LIST_OF_ITEMS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "ElicitItemPrompt"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "ItemValidationPrompt"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "ElicitItemPrompt",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Welche Sauce meintest Du?"
+                    }
+                ]
+            },
+            {
+                "id": "ItemValidationPrompt",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Das habe ich leider nicht verstanden.  Welches Rezept meintest Du?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Leider kenne ich kein Rezept für {Item} Sauce.  Welches Rezept meintest Du?"
+                    }
+                ]
+            }
+        ]
+    }
+}
