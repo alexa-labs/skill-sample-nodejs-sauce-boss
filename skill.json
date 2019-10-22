@@ -186,6 +186,25 @@
             "how to"
           ]
         },
+        "pt-BR": {
+          "name": "Mestre dos Molhos",
+          "summary": "Mestre dos molhos vai lhe ajudar a fazer todos os tipos de molhos com os ingredientes e temperos básicos que você tem na sua cozinha",
+          "description": "Você é uma pessoa apaixonada por molhos únicos e interessantes? Você compra condimentos extravagantes e raros e acaba tendo que usar antees que expirem? Está ficando sem espaço na sua geladeira? Seus amigos e família julgam suas habilidades culinárias?!? Seus problemas acabaram! O Mestre dos Molhos chegou! O Mestre dos Molhos vai lhe ajudar a fazer todo tipo de molhos fascinantes a partir de igredientes e temperos básicos que você já tem na sua cozinha. Simplesmente peça ao Mestre dos Molhos um molho que você queira fazer e você receberá uma receita simples e fácil de seguir para incrementar qualquer prato que você queira fazer, maravilhar seus amigos, acalmar seu apetite e ainda por cima liberar espaço na sua geladeira. Nham!!!",
+          "description": "Got a passion for unique and interesting sauces? Do you buy scrumptious, rare condiments only to have them expire before use? Running out of space in your fridge? Facing judgement from friends or family for lackluster cooking skill?!? Have no fear, Sauce Boss is here! Sauce Boss will help you make all sorts of fascinating sauces from basic condiments and spices that you keep around your kitchen. Just ask Sauce Boss for a sauce you want to whip up and you'll receive a simple, easy-to-follow recipe to jazz up any dish you make, wow your folks, please your appetite and save space in your fridge. YUM!!!!",
+          "examplePhrases": [
+            "Alexa open Sauce Boss",
+            "Alexa ask Sauce Boss what's the recipe for barbecue sauce",
+            "Alexa ask Sauce Boss how do I make barbecue sauce"
+          ],
+          "keywords": [
+            "sauce",
+            "recipe",
+            "kitchen",
+            "cooking",
+            "food",
+            "how to"
+          ]
+        },
         "ja-JP": {
           "name": "ソースボス",
           "summary": "ソースボスは、キッチンにある基本的な調味料やスパイスを使って、いろんな種類のユニークなソースを作るお手伝いをします。",
