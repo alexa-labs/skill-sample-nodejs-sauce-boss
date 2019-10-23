@@ -80,7 +80,7 @@ module.exports = {
         },
         PES: {
             name: `Pesto`,
-            instructions: `Para fazer pesto, combine manjerição, alho, queijo parmesão, azeite de oliva e pinhões em um liquidificador. Bata até que a mistura fique homogênea. Adicione salsinha a gosto.`
+            instructions: `Para fazer pesto, combine manjericão, alho, queijo parmesão, azeite de oliva e pinhões em um liquidificador. Bata até que a mistura fique homogênea. Adicione salsinha a gosto.`
         },
         TAR: {
             name: `Tártaro`,

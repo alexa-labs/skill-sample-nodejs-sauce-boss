@@ -42,7 +42,7 @@ module.exports = {
             RECIPE_HEADER_TITLE: `COMO FAZER MOLHO {{sauce}}`,
             HELP_HEADER_TITLE: `AJUDA`,
             HELP_HEADER_SUBTITLE: `Selecione o molho que você quer preparar`,
-            WELCOME_MESSAGE: `Boas vindas ao {{skillName}}. Você pode me perguntar algo como, qual a receipta para o molho {{sauce}}? ... Então, qual molho você quer preparar?`,
+            WELCOME_MESSAGE: `Boas vindas ao {{skillName}}. Você pode me perguntar algo como, qual a receita para o molho {{sauce}}? ... Então, qual molho você quer preparar?`,
             WELCOME_REPROMPT: `Para instruções sobre o que dizer, por favor diga ajuda. Qual molho você gostaria de preparar?`,
             DISPLAY_CARD_TITLE: `{{skillName}}  - Receita para {{sauce}}`,
             HELP_MESSAGE: `Você pode fazer perguntas do tipo, qual a receita para {{sauce}}, ou você pode dizer sair ... Então, qual molho você quer preparar?`,
