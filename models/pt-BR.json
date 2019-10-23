@@ -1,0 +1,320 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "mestre dos molhos",
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                      {
+                          "name": "Item",
+                          "type": "LIST_OF_ITEMS",
+                          "samples": [
+                              "Eu quero o molho {Item}",
+                              "Molho {Item} é uma boa",
+                              "Que tal {Item}",
+                              "Eu gostaria da receita para {Item}",
+                              "{Item}"
+                          ]
+                      }
+                  ],
+                    "samples": [
+                        "como eu faço um {Item}",
+                        "como eu faço uma {Item}",
+                        "como eu faço {Item}",
+                        "como eu faço molho {Item}",
+                        "como eu consigo um {Item}",
+                        "como eu consigo uma {Item}",
+                        "como eu consigo {Item}",
+                        "como eu crio um {Item}",
+                        "como eu crio uma {Item}",
+                        "como eu crio {Item}",
+                        "como eu crio molho {Item}",
+                        "como se faz um {Item}",
+                        "como se faz uma {Item}",
+                        "como se faz {Item}",
+                        "como se faz molho {Item}",
+                        "como se consegue um {Item}",
+                        "como se consegue uma {Item}",
+                        "como se consegue {Item}",
+                        "como se consegue molho {Item}",
+                        "como se cria um {Item}",
+                        "como se cria uma {Item}",
+                        "como se cria {Item}",
+                        "como se cria molho {Item}",
+                        "como eu monto um {Item}",
+                        "como eu monto uma {Item}",
+                        "como eu monto {Item}",
+                        "como eu monto molho {Item}",
+                        "como se monta um {Item}",
+                        "como se monta uma {Item}",
+                        "como se monta {Item}",
+                        "como se monta molho {Item}",
+                        "como {Item} é feito",
+                        "como um {Item} é feito",
+                        "como uma {Item} é feita",
+                        "como molho {Item} é feito",
+                        "como é feito um {Item}",
+                        "como é feita uma {Item}",
+                        "como é feito {Item}",
+                        "como é feita {Item}",
+                        "como é feito molho {Item}",
+                        "receita para {Item}",
+                        "receita para o {Item}",
+                        "receita para a {Item}",
+                        "receita para o molho {Item}",
+                        "receitas para {Item}",
+                        "receitas para o {Item}",
+                        "receitas para a {Item}",
+                        "receitas para o molho {Item}",
+                        "quais são os ingredientes para {Item}",
+                        "quais são os ingredientes para a {Item}",
+                        "quais são os ingredientes para o {Item}",
+                        "quais são os ingredientes para o molho {Item}",
+                        "quais os ingredientes para {Item}",
+                        "quais os ingredientes para a {Item}",
+                        "quais os ingredientes para o {Item}",
+                        "quais os ingredientes para o molho {Item}",
+                        "o que preciso para {Item}",
+                        "o que preciso para a {Item}",
+                        "o que preciso para o {Item}",
+                        "o que preciso para o molho {Item}",
+                        "o que preciso para fazer {Item}",
+                        "o que preciso para fazer a {Item}",
+                        "o que preciso para fazer o {Item}",
+                        "o que preciso para fazer o molho {Item}",
+                        "o que preciso para conseguir {Item}",
+                        "o que preciso para conseguir a {Item}",
+                        "o que preciso para conseguir o {Item}",
+                        "o que preciso para conseguir o molho {Item}",
+                        "o que eu preciso para montar {Item}",
+                        "o que eu preciso para montar a {Item}",
+                        "o que eu preciso para montar o {Item}",
+                        "o que eu preciso para montar o molho {Item}",
+                        "o que eu preciso para criar {Item}",
+                        "o que eu preciso para criar a {Item}",
+                        "o que eu preciso para criar o {Item}",
+                        "o que eu preciso para criar o molho {Item}",
+                        "o que eu preciso ter para {Item}",
+                        "o que eu preciso ter para a {Item}",
+                        "o que eu preciso ter para o {Item}",
+                        "o que eu preciso ter para o molho {Item}",
+                        "o que eu preciso ter para fazer {Item}",
+                        "o que eu preciso ter para fazer a {Item}",
+                        "o que eu preciso ter para fazer o {Item}",
+                        "o que eu preciso ter para fazer o molho {Item}",
+                        "o que preciso ter para {Item}",
+                        "o que preciso ter para a {Item}",
+                        "o que preciso ter para o {Item}",
+                        "o que preciso ter para o molho {Item}",
+                        "o que preciso ter para fazer {Item}",
+                        "o que preciso ter para fazer a {Item}",
+                        "o que preciso ter para fazer o {Item}",
+                        "o que preciso ter para fazer o molho {Item}",
+                        "o que preciso ter para conseguir {Item}",
+                        "o que preciso ter para conseguir a {Item}",
+                        "o que preciso ter para conseguir o {Item}",
+                        "o que preciso ter para conseguir o molho {Item}",
+                        "o que eu preciso ter para montar {Item}",
+                        "o que eu preciso ter para montar a {Item}",
+                        "o que eu preciso ter para montar o {Item}",
+                        "o que eu preciso ter para montar o molho {Item}",
+                        "o que eu preciso ter para criar {Item}",
+                        "o que eu preciso ter para criar a {Item}",
+                        "o que eu preciso ter para criar o {Item}",
+                        "o que eu preciso ter para criar o molho {Item}",
+                        "o que se precisa para {Item}",
+                        "o que se precisa para o {Item}",
+                        "o que se precisa para a {Item}",
+                        "o que se precisa para o molho {Item}",
+                        "quais os ingredientes que preciso para fazer {Item}",
+                        "quais os ingredientes que preciso para fazer a {Item}",
+                        "quais os ingredientes que preciso para fazer o {Item}",
+                        "quais os ingredientes que preciso para fazer o molho {Item}",
+                        "quais os ingredientes que preciso para criar {Item}",
+                        "quais os ingredientes que preciso para criar a {Item}",
+                        "quais os ingredientes que preciso para criar o {Item}",
+                        "quais os ingredientes que preciso para criar o molho {Item}",
+                        "o que {Item} leva",
+                        "o que a {Item} leva",
+                        "o que o {Item} leva",
+                        "o que o molho {Item} leva",
+                        "o que vai na {Item}",
+                        "o que vai no {Item}",
+                        "o que vai no molho {Item}",
+                        "qual a receita para {Item}",
+                        "qual a receita para a {Item}",
+                        "qual a receita para o {Item}",
+                        "qual a receita para o molho {Item}",
+                        "como fazer {Item}",
+                        "como fazer a {Item}",
+                        "como fazer o {Item}",
+                        "como fazer o molho {Item}",
+                        "{Item}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                  "name": "LIST_OF_ITEMS",
+                  "values": [
+                      {
+                          "id": "SEC",
+                          "name": {
+                              "value": "secreto"
+                          }
+                      },
+                      {
+                          "id": "CRA",
+                          "name": {
+                              "value": "cranberry"
+                          }
+                      },
+                      {
+                          "id": "PIZ",
+                          "name": {
+                              "value": "pizza"
+                          }
+                      },
+                      {
+                          "id": "TAR",
+                          "name": {
+                              "value": "tártaro"
+                          }
+                      },
+                      {
+                          "id": "PES",
+                          "name": {
+                              "value": "pesto"
+                          }
+                      },
+                      {
+                          "id": "THO",
+                          "name": {
+                              "value": "thousand island"
+                          }
+                      },
+                      {
+                          "id": "WOR",
+                          "name": {
+                              "value": "worcestershire"
+                          }
+                      },
+                      {
+                          "id": "CAE",
+                          "name": {
+                              "value": "caesar",
+                              "synonyms": [
+                                  "césar"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "RAN",
+                          "name": {
+                              "value": "ranch",
+                              "synonyms": [
+                                  "rancho"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "BBQ",
+                          "name": {
+                              "value": "barbecue",
+                              "synonyms": [
+                                  "b. b. q."
+                              ]
+                          }
+                      },
+                      {
+                          "id": "HON",
+                          "name": {
+                              "value": "honey mustard",
+                              "synonyms": [
+                                  "mostarda com mel"
+                              ]
+                          }
+                      }
+                  ]
+              }
+          ]
+      },
+      "dialog": {
+          "intents": [
+              {
+                  "name": "RecipeIntent",
+                  "delegationStrategy": "ALWAYS",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "Item",
+                          "type": "LIST_OF_ITEMS",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "ElicitItemPrompt"
+                          },
+                          "validations": [
+                              {
+                                  "type": "hasEntityResolutionMatch",
+                                  "prompt": "ItemValidationPrompt"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "delegationStrategy": "ALWAYS"
+      },
+      "prompts": [
+          {
+              "id": "ElicitItemPrompt",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Qual a receita que você quer?"
+                  }
+              ]
+          },
+          {
+              "id": "ItemValidationPrompt",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Não entendi. Qual a receita que você quer?"
+                  },
+                  {
+                      "type": "PlainText",
+                      "value": "Eu não sei a receita para {Item}. Por favor escolha outra receita."
+                  }
+              ]
+          }
+      ]
+  }
+  }
