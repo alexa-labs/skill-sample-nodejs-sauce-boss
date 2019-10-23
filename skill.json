@@ -186,6 +186,24 @@
             "how to"
           ]
         },
+        "pt-BR": {
+          "name": "Mestre dos Molhos",
+          "summary": "Mestre dos molhos vai lhe ajudar a fazer todos os tipos de molhos com os ingredientes e temperos básicos que você tem na sua cozinha",
+          "description": "Você é uma pessoa apaixonada por molhos únicos e interessantes? Você compra condimentos extravagantes e raros e acaba tendo que usar antees que expirem? Está ficando sem espaço na sua geladeira? Seus amigos e família julgam suas habilidades culinárias?!? Seus problemas acabaram! O Mestre dos Molhos chegou! O Mestre dos Molhos vai lhe ajudar a fazer todo tipo de molhos fascinantes a partir de igredientes e temperos básicos que você já tem na sua cozinha. Simplesmente peça ao Mestre dos Molhos um molho que você queira fazer e você receberá uma receita simples e fácil de seguir para incrementar qualquer prato que você queira fazer, maravilhar seus amigos, acalmar seu apetite e ainda por cima liberar espaço na sua geladeira. Nham!!!",
+          "examplePhrases": [
+            "Alexa abra Mestre dos Molhos",
+            "Alexa pergunte ao Mestre dos Molhos qual a receita para molho barbecue",
+            "Alexa pergunte ao Mestre dos Molhos como eu faço molho barbecue"
+          ],
+          "keywords": [
+            "molho",
+            "receita",
+            "cozinha",
+            "cozinhando",
+            "comida",
+            "how to"
+          ]
+        },
         "ja-JP": {
           "name": "ソースボス",
           "summary": "ソースボスは、キッチンにある基本的な調味料やスパイスを使って、いろんな種類のユニークなソースを作るお手伝いをします。",

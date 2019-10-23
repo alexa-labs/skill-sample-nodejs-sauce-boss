@@ -1,0 +1,4 @@
+./.ask/config
+
+./lambda/custom/node_modules/
+./lambda/custom/package-lock.json

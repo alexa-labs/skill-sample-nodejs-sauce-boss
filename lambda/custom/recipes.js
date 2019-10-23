@@ -53,6 +53,52 @@ module.exports = {
             instructions: `No need to butter me up, I can tell you're in a jam, but the secret sauce is safe with me.`
         }
     },
+    pt: {
+        HON: {
+            name: `Mostarda e Mel`,
+            instructions: `Para fazer molho de mostarda e mel, misture maionese, mustarda amarela, mustarda Dijon, mel, e suco de limão em uma tigela. Cubra e deixe pernoitar na geladeira.`
+        },
+        BBQ: {
+            name: "BBQ",
+            instructions: `Para fazer molho BBQ, misture açúcar mascavo, ketchup, vinagre e molho Worcestershire em um liquidificador. Tempere com sal, pimenta em pó e pimenta caiena. Bater no liquidificador até obter uma mistura homogênea.`
+        },
+        RAN: {
+            name: `Ranch`,
+            instructions: `Para molho ranch, misture maionese, creme de leite, cebolinha, salsa, endro, alho em pó, vebola em pó, sal e pimenta em uma tigela grande. Cubra e leve à geladeira pelo menos 30 minutos antes de servir.`
+        },
+        CAE: {
+            name: `Caesar`,
+            instructions: `Para o molho César, combine suco de limão, vinagre, água, queijo parmesão ralado, mostarda Dijon, alho em pó e pimenta em uma jarra. Feche com uma tampa e agite bem. Leve à geladeira até a hora de usar.`
+        },
+        WOR: {
+            name: `Worcestershire`,
+            instructions: `Para fazer molho Worcestershire, combine vinagre de maçã, água, molho de soja, açúcar mascavo, mostarda em pó, cebola em pó, alho em pó, canela moída e uma pitada de pimenta do reino em uma panela. Deixe ferver e cozinhe até ficar perfumado, cerca de 45 segundos, e deixe esfriar até a temperatura ambiente.`
+        },
+        THO: {
+            name: `Thousand Island`,
+            instructions: `Para o molho Thousand Island, combine maionese, ketchup, relish de pepino, sal e pimenta e uma tigela pequena até obter uma mistura homogênea. Resfrie e sirva.`
+        },
+        PES: {
+            name: `Pesto`,
+            instructions: `Para fazer pesto, combine manjericão, alho, queijo parmesão, azeite de oliva e pinhões em um liquidificador. Bata até que a mistura fique homogênea. Adicione salsinha a gosto.`
+        },
+        TAR: {
+            name: `Tártaro`,
+            instructions: `A receita do molho tártaro consiste em misturar maionese, cebola picada, relish de pepino sal e pimenta em uma tigela média. Misture bem e deixe descansar por pelo menos 10 minutos antes de servir.`
+        },
+        PIZ: {
+            name: `Pizza`,
+            instructions: `Para fazer molho de pizza, misture molho de tomate e pasta de tomate em uma tigela média até obter uma mistura homogênea. Misture orégano, alho picado seco e colorau.`
+        },
+        CRA: {
+            name: `Cranberry`,
+            instructions: `Para o molho de cranberry, dissolva açúcar em suco de laranja em uma panela em fogo médio. Misture os cranberries e cozinhe até começarem a estalar. Retire do fogo e transfira o molho para uma tigela antes de servir.`
+        },
+        SEC: {
+            name: `Secreto`,
+            instructions: `Vocé é muito doce, mas não se preocupe. A receita secreta está bem segura comigo.`
+        }
+    },
     hi: {
         'HON': {
             name: `हनी मस्टर्ड`,
