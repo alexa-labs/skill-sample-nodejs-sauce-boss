@@ -34,6 +34,29 @@ module.exports = {
             REFLECTOR_MESSAGE: `You just triggered {{intentName}}`
         }
     },
+    pt: {
+        translation: {
+            RECIPES: recipes.pt,
+            SKILL_NAME: `Mestre dos Molhos`,
+            HEADER_TITLE: `Boas vindas ao {{skillName}}`,
+            RECIPE_HEADER_TITLE: `COMO FAZER MOLHO {{sauce}}`,
+            HELP_HEADER_TITLE: `AJUDA`,
+            HELP_HEADER_SUBTITLE: `Selecione o molho que você quer preparar`,
+            WELCOME_MESSAGE: `Boas vindas ao {{skillName}}. Você pode me perguntar algo como, qual a receipta para o molho {{sauce}}? ... Então, qual molho você quer preparar?`,
+            WELCOME_REPROMPT: `Para instruções sobre o que dizer, por favor diga ajuda. Qual molho você gostaria de preparar?`,
+            DISPLAY_CARD_TITLE: `{{skillName}}  - Receita para {{sauce}}`,
+            HELP_MESSAGE: `Você pode fazer perguntas do tipo, qual a receita para {{sauce}}, ou você pode dizer sair ... Então, qual molho você quer preparar?`,
+            HELP_REPROMPT: `Você pode dizer coisas como, qual a receita para {{sauce}}, ou você pode dizer sair ... Então, qual molho você quer preparar?`,
+            STOP_MESSAGE: `Tchau!`,
+            RECIPE_REPEAT_MESSAGE: `Tente dizer repita.`,
+            RECIPE_NOT_FOUND_WITH_ITEM_NAME: `Sinto muito, mas no momento não sei a receita para {{sauce}}. Qual outro molho você gostaria de preparar?`,
+            RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME: `Sinto muito, mas no momento não sei a receita para {{sauce}}. Qual outro molho você gostaria de preparar?`,
+            RECIPE_NOT_FOUND_REPROMPT: `Qual molho você gostaria de preparar?`,
+            ERROR_MESSAGE: `Desculpe, eu não entendi. Você pode reformular, por favor?`,
+            HINT_TEMPLATE: `Como eu faço o molho {{sauce}}?`,
+            REFLECTOR_MESSAGE: `Você acabou de acionar {{intentName}}`
+        }
+    },
     hi: {
         translation: {
             RECIPES: recipes.hi,
