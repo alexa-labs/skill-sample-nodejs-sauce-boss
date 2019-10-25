@@ -11,11 +11,7 @@
             "Alexa, demande le roi des sauces quelle est la recette du pesto",
             "Alexa, ouvre le roi des sauces et dis-moi comment faire une sauce césar"
           ],
-          "keywords": [
-            "sauce",
-            "recette",
-            "cuisine"
-          ]
+          "keywords": ["sauce", "recette", "cuisine"]
         },
         "fr-CA": {
           "name": "Le Roi des Sauces",
@@ -26,11 +22,7 @@
             "Alexa, demande le roi des sauces quelle est la recette du pesto",
             "Alexa, ouvre le roi des sauces et dis-moi comment faire une sauce césar"
           ],
-          "keywords": [
-            "sauce",
-            "recette",
-            "cuisine"
-          ]
+          "keywords": ["sauce", "recette", "cuisine"]
         },
         "es-ES": {
           "name": "Rey de la Salsa",
@@ -48,24 +40,6 @@
             "guisar",
             "comida",
             "cómo se hace"
-          ]
-        },
-        "it-IT": {
-          "name": "Re delle salse",
-          "summary": "Il re delle salse ti aiuterá a preparare salse buonissime con condimenti e spezie che hai in dispensa.",
-          "description": "Ti piacciono le salse? Compri spezie e condimenti strani ma li lasci scadere in dispensa? Sei rimasto senza spazio in frigo? I tuoi amici e familiari ti prendono in giro per le tue capacità culinarie?!? Non aver paura, Il re delle salse è qui per aiutarti. Dí al re delle salse quale salsa vuoi preparare e ti guiderà nella preparazione per accompagnare qualsiasi piatto e fare colpo sui tuoi invitati, soddisfare la tua golosità e svuotare il frigo. Delizioso!!!!",
-          "examplePhrases": [
-            "Alexa apri re delle salse",
-            "Alexa chiedi al re delle salse come si fa la salsa barbeque",
-            "Alexa chiedi al re delle salse come faccio la salsa barbeque"
-          ],
-          "keywords": [
-            "salsa",
-            "ricetta",
-            "cucina",
-            "cuocere",
-            "cibo",
-            "come si fa"
           ]
         },
         "es-MX": {
@@ -212,6 +186,24 @@
             "how to"
           ]
         },
+        "pt-BR": {
+          "name": "Mestre dos Molhos",
+          "summary": "Mestre dos molhos vai lhe ajudar a fazer todos os tipos de molhos com os ingredientes e temperos básicos que você tem na sua cozinha",
+          "description": "Você é uma pessoa apaixonada por molhos únicos e interessantes? Você compra condimentos extravagantes e raros e acaba tendo que usar antees que expirem? Está ficando sem espaço na sua geladeira? Seus amigos e família julgam suas habilidades culinárias?!? Seus problemas acabaram! O Mestre dos Molhos chegou! O Mestre dos Molhos vai lhe ajudar a fazer todo tipo de molhos fascinantes a partir de igredientes e temperos básicos que você já tem na sua cozinha. Simplesmente peça ao Mestre dos Molhos um molho que você queira fazer e você receberá uma receita simples e fácil de seguir para incrementar qualquer prato que você queira fazer, maravilhar seus amigos, acalmar seu apetite e ainda por cima liberar espaço na sua geladeira. Nham!!!",
+          "examplePhrases": [
+            "Alexa abra Mestre dos Molhos",
+            "Alexa pergunte ao Mestre dos Molhos qual a receita para molho barbecue",
+            "Alexa pergunte ao Mestre dos Molhos como eu faço molho barbecue"
+          ],
+          "keywords": [
+            "molho",
+            "receita",
+            "cozinha",
+            "cozinhando",
+            "comida",
+            "how to"
+          ]
+        },
         "ja-JP": {
           "name": "ソースボス",
           "summary": "ソースボスは、キッチンにある基本的な調味料やスパイスを使って、いろんな種類のユニークなソースを作るお手伝いをします。",
@@ -228,6 +220,26 @@
             "料理",
             "食べ物",
             "ハウツー"
+          ]
+        },
+        "de-DE": {
+          "name": "Saucen-Meister",
+          "summary": "Saucen-Meister hilft Dir, aus einfachen Zutaten leckere Saucen und Dressings zu zaubern.",
+          "description": "Kannst auch Du der Verführung köstlicher Saucen und Dressings nicht widerstehen? Kaufst Du erlesene Zutaten, und lässt sie nach wenigen Nutzungen im Gewürzregal verstauben? Geht Dein Platz im Kühlschrank zur Neige? Sind Deine opulenten Kochgewohnheiten der Running Gag Deines Freundeskreises?!? Dann ist Sauchen-Meister genau das richtige für Dich! Mit Saucen-Meister bereitest Du köstliche Saucen und Dressings aus schlichten, haushaltsüblichen Zutaten. Frag den Saucen-Meister einfach nach der Sauce oder dem Dressing Deiner Wahl, und Du bekommst eine einfache, leicht nachvollziehbare Kochanleitung. Viel Spaß beim Kochen, Freunde beeindrucken und Geld sparen! :)",
+          "examplePhrases": [
+            "Alexa, starte Saucen Meister",
+            "Alexa, frag Saucen Meister nach dem Rezept für Barbecue-Sauce",
+            "Alexa, frag Saucen Meister wie man Barbecue-Sauce macht"
+          ],
+          "keywords": [
+            "sauce",
+            "soße",
+            "dressing",
+            "rezept",
+            "küche",
+            "kochen",
+            "zubereitung",
+            "anleitung"
           ]
         }
       },
