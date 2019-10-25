@@ -8,52 +8,6 @@
 
 module.exports = {
     en: {
-        it: {
-            HON: {
-                name: `Mostarda e Miele`,
-                instructions: `Per preparare la salsa mostarda e miele, mescola maionese, mostarda dolce, mostarda di digione, miele, e succo di limone in una ciotola. Copri e lascia in frigo per tutta la notte.`
-            },
-            BBQ: {
-                name: `Barbeque`,
-                instructions: `Per fare la salsa barbecue, frulla insieme zucchero di canna, ketchup, aceto, e salsa Worcestershire. Condisci con sale, pepe, e peperoncino. Frulla finchè la salsa non è omogenea.`
-            },
-            RAN: {
-                name: `Ranch`,
-                instructions: `Per la salsa rench, mescola maionese, panna acida, erba cipollina, prezzemolo, aneto, aglio in polvere, cipolla in polvere, sale e pepe in una ciotola grande. Copri e lascia in frigo per 30 minuti prima di servire.`
-            },
-            CAE: {
-                name: `Caesar`,
-                instructions: `Per la salsa Caesar, unisci succo di limone, aceto, acqua, parmigiano grattugiato, mostarda di digione, aglio in polvere e pepe in un barattolo. Metti il coperchio e agita bene. Lascia in frigo fino al momento di usarla.`
-            },
-            WOR: {
-                name: `Worcestershire`,
-                instructions: `Per fare la salsa Worcestershire, unisci aceto di mele, acqua, salsa di soia, zucchero di canna, mostarda in polvere, cipolla in polvere, aglio in polvere, cannella in polvere ed un pizzico di pepe nero in un pentolino. Porta a ebollizione e cuoci per circa 45 secondi, poi lascia raffreddare a temperatura ambiente.`
-            },
-            THO: {
-                name: `Mille isole`,
-                instructions: `Per la salsa mille isole, mescola maionese, ketchup, salamoia dolce, sale e pepe in una ciotolina finché non sono ben amalgamati. Lascia raffreddare e servi.`
-            },
-            PES: {
-                name: `Pesto`,
-                instructions: `Per preparare il pesto, unisci basilico, aglio, parmigiano, olio d'oliva e pinoli in un robot da cucina o frullatore. Mescola fino ad ottenere una consistenza liscia. Aggiungi del prezzemolo se ti piace.`
-            },
-            TAR: {
-                name: `Tartara`,
-                instructions: `Per la salsa tartara, mescola maionese, cipolla tritata, salamoia dolce, sale, pepe in una ciotola di medie dimensioni. Mescola bene e lascia riposare almeon 10 minuti prima di servire.`
-            },
-            PIZ: {
-                name: `Pizza`,
-                instructions: `Per fare la salsa pizza, mescola passata e concentrato di pomodoro in una ciotola di medie dinemsioni fino ad ottenere una consistenza liscia. Aggiungi origano, aglio tritato e paprika dolce.`
-            },
-            CRA: {
-                name: `Mirtilli`,
-                instructions: `Per la salsa di mirtilli, sciogli lo zucchero nel succo d'arancia in un pentolino a fuoco medio. Aggiungi i mirtilli e cuoci finchè non inizia a sobollire. Togli dal fuoco e versa la salsa in una ciotola prima di servire.`
-            },
-            SEC: {
-                name: `Segreta`,
-                instructions: `Non pensarci nemmeno, la salsa segreta è in buone mani.`
-            }
-        },
         HON: {
             name: `Honey Mustard`,
             instructions: `To make honey mustard, mix mayonnaise, yellow mustard, Dijon mustard, honey, and lemon juice together in a bowl. Cover and chill in the refrigerator overnight.`
@@ -97,6 +51,52 @@ module.exports = {
         SEC: {
             name: `Secret`,
             instructions: `No need to butter me up, I can tell you're in a jam, but the secret sauce is safe with me.`
+        }
+    },
+    it: {
+        HON: {
+            name: `Mostarda e Miele`,
+            instructions: `Per preparare la salsa mostarda e miele, mescola maionese, mostarda dolce, mostarda di digione, miele, e succo di limone in una ciotola. Copri e lascia in frigo per tutta la notte.`
+        },
+        BBQ: {
+            name: `Barbeque`,
+            instructions: `Per fare la salsa barbecue, frulla insieme zucchero di canna, ketchup, aceto, e salsa Worcestershire. Condisci con sale, pepe, e peperoncino. Frulla finchè la salsa non è omogenea.`
+        },
+        RAN: {
+            name: `Ranch`,
+            instructions: `Per la salsa rench, mescola maionese, panna acida, erba cipollina, prezzemolo, aneto, aglio in polvere, cipolla in polvere, sale e pepe in una ciotola grande. Copri e lascia in frigo per 30 minuti prima di servire.`
+        },
+        CAE: {
+            name: `Caesar`,
+            instructions: `Per la salsa Caesar, unisci succo di limone, aceto, acqua, parmigiano grattugiato, mostarda di digione, aglio in polvere e pepe in un barattolo. Metti il coperchio e agita bene. Lascia in frigo fino al momento di usarla.`
+        },
+        WOR: {
+            name: `Worcestershire`,
+            instructions: `Per fare la salsa Worcestershire, unisci aceto di mele, acqua, salsa di soia, zucchero di canna, mostarda in polvere, cipolla in polvere, aglio in polvere, cannella in polvere ed un pizzico di pepe nero in un pentolino. Porta a ebollizione e cuoci per circa 45 secondi, poi lascia raffreddare a temperatura ambiente.`
+        },
+        THO: {
+            name: `Mille isole`,
+            instructions: `Per la salsa mille isole, mescola maionese, ketchup, salamoia dolce, sale e pepe in una ciotolina finché non sono ben amalgamati. Lascia raffreddare e servi.`
+        },
+        PES: {
+            name: `Pesto`,
+            instructions: `Per preparare il pesto, unisci basilico, aglio, parmigiano, olio d'oliva e pinoli in un robot da cucina o frullatore. Mescola fino ad ottenere una consistenza liscia. Aggiungi del prezzemolo se ti piace.`
+        },
+        TAR: {
+            name: `Tartara`,
+            instructions: `Per la salsa tartara, mescola maionese, cipolla tritata, salamoia dolce, sale, pepe in una ciotola di medie dimensioni. Mescola bene e lascia riposare almeon 10 minuti prima di servire.`
+        },
+        PIZ: {
+            name: `Pizza`,
+            instructions: `Per fare la salsa pizza, mescola passata e concentrato di pomodoro in una ciotola di medie dinemsioni fino ad ottenere una consistenza liscia. Aggiungi origano, aglio tritato e paprika dolce.`
+        },
+        CRA: {
+            name: `Mirtilli`,
+            instructions: `Per la salsa di mirtilli, sciogli lo zucchero nel succo d'arancia in un pentolino a fuoco medio. Aggiungi i mirtilli e cuoci finchè non inizia a sobollire. Togli dal fuoco e versa la salsa in una ciotola prima di servire.`
+        },
+        SEC: {
+            name: `Segreta`,
+            instructions: `Non pensarci nemmeno, la salsa segreta è in buone mani.`
         }
     },
     pt: {
