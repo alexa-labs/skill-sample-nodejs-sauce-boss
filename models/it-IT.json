@@ -1,0 +1,242 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "re delle salse",
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "LIST_OF_ITEMS",
+                            "samples": [
+                                "voglio la salsa {Item}",
+                                "la salsa {Item} va bene",
+                                "proviamo {Item}",
+                                "come si fa la salsa {Item}",
+                                "vorrei la ricetta di {Item}",
+                                "{Item}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "come posso preparare una {Item}",
+                        "come posso preparare una salsa {Item}",
+                        "come posso preparare la {Item}",
+                        "come posso preparare la salsa {Item}",
+                        "come posso preparare {Item}",
+                        "come posso preparare salsa {Item}",
+                        "come posso ottenere una {Item}",
+                        "come posso ottenere una salsa {Item}",
+                        "come posso ottenere la {Item}",
+                        "come posso ottenere la salsa {Item}",
+                        "come posso ottenere {Item}",
+                        "come posso ottenere salsa {Item}",
+                        "come posso fare una {Item}",
+                        "come posso fare una salsa {Item}",
+                        "come posso fare la {Item}",
+                        "come posso fare la salsa {Item}",
+                        "come posso fare {Item}",
+                        "come posso fare salsa {Item}",
+                        "come si prepara una {Item}",
+                        "come si prepara una salsa {Item}",
+                        "come si prepara la {Item}",
+                        "come si prepara la salsa {Item}",
+                        "come si prepara {Item}",
+                        "come si prepara salsa {Item}",
+                        "come si fa una {Item}",
+                        "come si fa una salsa {Item}",
+                        "come si fa la {Item}",
+                        "come si fa la salsa {Item}",
+                        "come si fa {Item}",
+                        "come si fa salsa {Item}",
+                        "come faccio una {Item}",
+                        "come faccio una salsa {Item}",
+                        "come faccio la {Item}",
+                        "come faccio la salsa {Item}",
+                        "come faccio {Item}",
+                        "come faccio salsa {Item}",
+                        "com'é la ricetta di una {Item}",
+                        "com'é la ricetta di una salsa {Item}",
+                        "com'é la ricetta della {Item}",
+                        "com'é la ricetta della salsa {Item}",
+                        "com'é la ricetta di {Item}",
+                        "{Item}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "uscire",
+                        "esci",
+                        "basta"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": [
+                        "indietro",
+                        "torna indietro"
+                                ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_ITEMS",
+                    "values": [
+                        {
+                            "id": "SEC",
+                            "name": {
+                                "value": "segreta"
+                            }
+                        },
+                        {
+                            "id": "CRA",
+                            "name": {
+                                "value": "mirtilli",
+                                "synonyms": [
+                                    "cranberry"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "PIZ",
+                            "name": {
+                                "value": "pizza"
+                            }
+                        },
+                        {
+                            "id": "TAR",
+                            "name": {
+                                "value": "tartara"
+                            }
+                        },
+                        {
+                            "id": "PES",
+                            "name": {
+                                "value": "pesto"
+                            }
+                        },
+                        {
+                            "id": "THO",
+                            "name": {
+                                "value": "mille isole",
+                                "synonyms": [
+                                    "thousand island"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "WOR",
+                            "name": {
+                                "value": "worcestershire",
+                                "synonyms": [
+                                    "worcester"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CAE",
+                            "name": {
+                                "value": "caesar"
+                            }
+                        },
+                        {
+                            "id": "RAN",
+                            "name": {
+                                "value": "ranch"
+                            }
+                        },
+                        {
+                            "id": "BBQ",
+                            "name": {
+                                "value": "barbeque",
+                                "synonyms": [
+                                    "b. b. q.",
+                                    "barbecue"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HON",
+                            "name": {
+                                "value": "mostarda e miele",
+                                "synonyms": [
+                                    "di mostarda e miele"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "RecipeIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "LIST_OF_ITEMS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "ElicitItemPrompt"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "ItemValidationPrompt"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "ElicitItemPrompt",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "che ricetta volevi?"
+                    }
+                ]
+            },
+            {
+                "id": "ItemValidationPrompt",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "non ho capito. che ricetta vorresti?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "non conosco la ricetta della salsa {Item}. che ricetta vorresti?"
+                    }
+                ]
+            }
+        ]
+    }
+}
