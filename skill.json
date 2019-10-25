@@ -13,6 +13,24 @@
           ],
           "keywords": ["sauce", "recette", "cuisine"]
         },
+        "it-IT": {
+          "name": "Re delle salse",
+          "summary": "Il re delle salse ti aiuterá a preparare salse buonissime con condimenti e spezie che hai in dispensa.",
+          "description": "Ti piacciono le salse? Compri spezie e condimenti strani ma li lasci scadere in dispensa? Sei rimasto senza spazio in frigo? I tuoi amici e familiari ti prendono in giro per le tue capacità culinarie?!? Non aver paura, Il re delle salse è qui per aiutarti. Dí al re delle salse quale salsa vuoi preparare e ti guiderà nella preparazione per accompagnare qualsiasi piatto e fare colpo sui tuoi invitati, soddisfare la tua golosità e svuotare il frigo. Delizioso!!!!",
+          "examplePhrases": [
+            "Alexa apri re delle salse",
+            "Alexa chiedi al re delle salse come si fa la salsa barbeque",
+            "Alexa chiedi al re delle salse come faccio la salsa barbeque"
+          ],
+          "keywords": [
+            "salsa",
+            "ricetta",
+            "cucina",
+            "cuocere",
+            "cibo",
+            "come si fa"
+          ]
+        },
         "fr-CA": {
           "name": "Le Roi des Sauces",
           "summary": "Le roi des Sauces vous aidera à préparer toutes sortes de sauces uniques à partir de condiments de base et d'épices que vous conservez dans votre cuisine.",
