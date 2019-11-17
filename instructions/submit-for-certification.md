@@ -22,7 +22,7 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
        | Common Failure Points for Example Phrases |
        | ----------------------------------------- |
-       | Example phrases **must** adhere to the [supported phrases](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/supported-phrases-to-begin-a-conversation?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs). |
+       | Example phrases **must** adhere to the [supported phrases](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/supported-phrases-to-begin-a-conversation?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=sauce-boss-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_sauceboss-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs). |
        | Example phrases **must** be based on sample utterances specified in your Intent Schema. |
        | Your first example phrase **must** include a wake word and your invocation name. |
        | Example phrases **must** provide a contextual response. |
@@ -57,18 +57,18 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
 7.  **Provide a comprehensive list of keywords for users that are searching for new skills.**  This is an optional field, and searching the [Alexa app](http://alexa.amazon.com) or the [skill store](http://www.amazon.com/skills) will also find the words in your Skill Name and descriptions, so you don't need to overdo it.  That being said, if there are words that you want users to find your skill with, you should include them here.  Separate the keywords with commas.
 
-8. **Privacy Policy URL.** This is an optional field, and should not be required for this fact skill sample.  You can leave it blank.
+8. **Privacy Policy URL.** This is an optional field, and should not be required for this sauce boss skill sample.  You can leave it blank.
 
 9. **Terms of Use URL.** This is also optional, and you can leave it blank.
 
 10. When you're ready, click **Save and Continue** at the bottom of the screen to move onto **Privacy & Compliance**
 
-11. *  **Does this skill allow users to make purchases or spend real money?** For this fact skill, the answer is no.  For future skills, make sure you answer this appropriately.
+11. *  **Does this skill allow users to make purchases or spend real money?** For this sauce boss skill, the answer is no.  For future skills, make sure you answer this appropriately.
 
-    *  **Does this Alexa skill collect users' personal information?** Again, for this fact skill, the answer is no.  If you do collect information about a user, such as names, email addresses, phone numbers, and so forth, ensure that you answer Yes to this question.
+    *  **Does this Alexa skill collect users' personal information?** Again, for this sauce boss skill, the answer is no.  If you do collect information about a user, such as names, email addresses, phone numbers, and so forth, ensure that you answer Yes to this question.
         *  Answering "yes" to this question will also require you to provide a link to your Privacy Policy on the previous page.
 
-    *  **Is your skill directed to children under the age of 13?** Because you customized this skill with data you provided, it is possible that you created a skill that targets children under the age of 13.  For this fact skill, the answer is **no** because it doesn't target a specific age group.
+    *  **Is your skill directed to children under the age of 13?** Because you customized this skill with data you provided, it is possible that you created a skill that targets children under the age of 13.  For this sauce boss skill, the answer is **no** because it doesn't target a specific age group.
         * Factors to consider in determining if this skill is directed to children under 13 include:
             * Subject matter of the skill
             * Presence of child-oriented activities and incentives
@@ -86,7 +86,7 @@ We are almost done!  The last step is to add the metadata that your skill will u
 	* Since you are using our Sample, make sure to add a sentence to your Testing Instructions referencing the Sample you used. For example:
 
     ```text
-    This was built using the Fact Sample.
+    This was built using the Suace Boss Sample
     ```
 
     This will let the testing team understand what you're providing them, and should decrease the testing time required.
@@ -96,7 +96,7 @@ We are almost done!  The last step is to add the metadata that your skill will u
 1. Click the **Save and Continue** button at the bottom of the page to move on to **Availability**.
     * You'll want to allow the Public to access the skill unless you are using [Alexa for Business](https://aws.amazon.com/a4b).
     * Beta testing is a good idea for every skill, however since this is from a template and is very basic, we'll skip that for now.  When you make your next skill, don't skip this step.  Seriously.  You won't regret it.
-    * It is recommended to allow your skill to be available in all countries and regions where Amazon distributes skills, unless you are using facts which aren't applicable to a given area.  Reasons to restrict distribution include not having intellectual property rights to distribute to that area and the content being illegal, offensive or otherwise prohibited in that area.
+    * It is recommended to allow your skill to be available in all countries and regions where Amazon distributes skills. Reasons to restrict distribution include not having intellectual property rights to distribute to that area and the content being illegal, offensive or otherwise prohibited in that area.
 
 1. If you feel that your skill is ready for certification, click the **Save and Continue** button at the bottom of the page and you'll be taken to the certification tab.
 

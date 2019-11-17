@@ -5,7 +5,7 @@ This sample skill use a how-to or recipe use case to demonstrate the Alexa Prese
 
 ## Customize the Skill to be Yours
 
-At this point, you should have a working copy of our Fact skill.  In order to make it your own, you will need to customize it with data and responses that you create.  Here are the things you will need to change:
+At this point, you should have a working copy of our Sauce Boss skill.  In order to make it your own, you will need to customize it with data and responses that you create.  Here are the things you will need to change:
 
 1.  **APL Customization** You can change any of the images or APL Style for the entire skill's User Interface. To learn more about APL, feel free to read over the [APL Documentation](https://developer.amazon.com/docs/alexa-presentation-language/apl-document.html). For example, if you wanted to change the background image for the skill, you would do the following:
    
