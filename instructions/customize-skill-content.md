@@ -76,6 +76,8 @@ At this point, you should have a working copy of our Sauce Boss skill.  In order
 
     Make sure to repeat this process for each document you want to replace the background image for, in this case we only did it for `helpIntent.json`, but the process is exactly the same for `recipeIntent.json` and `launchRequest.json`
 
+    After you're done editing all of the files necessary, make sure to press **Save**, **Deploy**, and navigate back to the **Testing** tab. When you reopen your skill, Alexa your new background images should show up!
+
     APL allows for plenty of customization, and if you want more control of your document's look and feel, make sure to check out the [APL Documentation](https://developer.amazon.com/docs/alexa-presentation-language/apl-document.html) to learn all you can do.
 
 
@@ -114,7 +116,7 @@ At this point, you should have a working copy of our Sauce Boss skill.  In order
         },  
         ```
 
-        
+        After you're done editing all of the files necessary, as before, make sure to press **Save**, **Deploy**, and navigate back to the **Testing** tab. When you reopen your skill, Alexa should say "Which sauce would you like to learn how to make" instead!
 
 
 3.  **New language.** If you are creating this skill for another language other than English, you will need to make sure Alexa's responses are also in that language.
