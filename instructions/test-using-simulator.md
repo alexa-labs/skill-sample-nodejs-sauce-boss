@@ -24,11 +24,13 @@ Toggle the dropdown from **Off** to **Development**.
 
 5. Ensure your skill works the way that you designed it to.
 	* After you interact with the Alexa Simulator, you should see the Skill I/O **JSON Input** and **JSON Output** boxes get populated with JSON data. You can also view the **Device Log** to trace your steps.
-	* If it's not working as expected, you can dig into the JSON to see exactly what Alexa is sending and receiving from the endpoint. If something is broken, you can find the error in AWS Cloudwatch.
+	* If it's not working as expected, you can dig into the JSON to see exactly what Alexa is sending and receiving from the endpoint. If something is broken, you can find the error in AWS Cloudwatch (below).
 
 
-6.  Troubleshooting with CloudWatch log messages: You can add `console.log()` statements to your code, to track what is happening as your code executes, and help to figure out what is happening when something goes wrong.
-You will find the log to be incredibly valuable as you move into more advanced skills.
+6.  Troubleshooting with CloudWatch log messages: You can add `console.log()` statements to your code, to track what is happening as your code executes, and help to figure out what is happening when something goes wrong. You will find the log to be incredibly valuable as you move into more advanced skills. To view CloudWatch logs:
+	1. Navigate to the **Code** Tab
+	2. In the bottom left hand corner, click the **Logs: Amazon CloudWatch** link
+	3. Once you are in the AWS CloudWatch Management Console, you can filter your log streams. Sorting by the `Last Event Time` column and clicking the top row will show you the logs of the last invocation. You can also filter or search for a specific log output with the `Filter` input field. 
 
 
 [![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_customization._TTH_.png)](./customize-skill-content.md)

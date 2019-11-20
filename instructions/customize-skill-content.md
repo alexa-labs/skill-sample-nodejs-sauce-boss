@@ -9,9 +9,11 @@ At this point, you should have a working copy of our Sauce Boss skill.  In order
 
 1.  **APL Customization** You can change any of the images or APL Style for the entire skill's User Interface. To learn more about APL, feel free to read over the [APL Documentation](https://developer.amazon.com/docs/alexa-presentation-language/apl-document.html). For example, if you wanted to change the background image for the skill, you would do the following:
    
-    1.  Navigate to **[helpIntent.json](../lambda/py/documents/helpIntent.json), [launchRequest.json](../lambda/py/documents/launchRequest.json), and [recipeIntent.json](../lambda/py/documents/recipeIntent.json)**
+    1. Navigate to the **Code** tab again, and expand the project folder on the left to `Skill Code/lambda/documents`.
     
-    2.  Under the `resources` property, find the following three objects:
+    2. Open **[helpIntent.json](../lambda/py/documents/helpIntent.json), [launchRequest.json](../lambda/py/documents/launchRequest.json), and [recipeIntent.json](../lambda/py/documents/recipeIntent.json)**
+    
+    3. These files might look confusing, but don't worry, we only care about lines `14-35`. On line `14`, you will find a property called `resources` (Feel free to use CTRL+F to find it if needed). There are 3 JSON Objects in the `resources` array that we care about:
     ```js
     "resources": [
         {
@@ -38,49 +40,54 @@ At this point, you should have a working copy of our Sauce Boss skill.  In order
         ...,
     ],
     ```
-    Each of these objects corresponds to the background image that gets rendered on the device depending on the device's resolution. Make sure your replacement images match the resolutions of those above.
+    Each of these objects corresponds to the background image that gets rendered on the device depending on the device's resolution. Since we are replacing these images, make sure your replacement images have the _same_ resolution as the originals, or it might look wrong on the device.
 
-    If I had my custom background images hosted at `https://my.custom.url/images/new_background_image_small.png`, `https://my.custom.url/images/new_background_image_medium.png`, and `https://my.custom.url/images/new_background_image_large.png`, then my `resources` property would now look like:
-    
+    After finding your images, find a file hosting service, such as a [S3 Bucket](https://aws.amazon.com/s3/). After uploading them all, remember the URL's of where they are hosted. For example, I found some new images and hosted them at the following URLS: 
+        - `https://my.custom.url/images/new_background_image_small.png`
+        - `https://my.custom.url/images/new_background_image_medium.png`
+        - `https://my.custom.url/images/new_background_image_large.png`
+    We are going to replace the old `backgroundImg` property in each of the JSON Objects with the _new_ URL's that store the new images. Using my example URL's as above, lines `14-35` now look like the following:
     ```js
     "resources": [
         {
             "description": "Background Image for Help Screen on Small Round Hubs",
             "when": "${@viewportProfile == @hubRoundSmall}",
             "strings": {
-                "backgroundImg": "https://my.custom.url/images/new_background_image_small.png"
+                "backgroundImg": "https://my.custom.url/images/new_background_image_small.png" <-- CHANGED
             }
         },
         {
             "description": "Background Image for Help Screen on Landscape Hubs",
             "when": "${@viewportProfile == @hubLandscapeSmall || @viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge}",
             "strings": {
-                "backgroundImg": "https://my.custom.url/images/new_background_image_medium.png"
+                "backgroundImg": "https://my.custom.url/images/new_background_image_medium.png" <-- CHANGED
             }
         },
         {
             "description": "Background Image for Help Screen on XLarge Hubs (e.g TV)",
             "when": "${@viewportProfile == @tvLandscapeXLarge}",
             "strings": {
-                "backgroundImg": "https://my.custom.url/images/new_background_image_large.png"
+                "backgroundImg": "https://my.custom.url/images/new_background_image_large.png" <-- CHANGED
             }
         },
         ...,
     ],
     ```
 
-    Make sure to repeat this process for each document you want to replace the background image for.
+    Make sure to repeat this process for each document you want to replace the background image for, in this case we only did it for `helpIntent.json`, but the process is exactly the same for `recipeIntent.json` and `launchRequest.json`
 
     APL allows for plenty of customization, and if you want more control of your document's look and feel, make sure to check out the [APL Documentation](https://developer.amazon.com/docs/alexa-presentation-language/apl-document.html) to learn all you can do.
 
 
 2.  **New sentences to respond to your users.** There are several sentences and responses that you will want to customize for your skill.
 
-    1.  Go to **[localisation.js](../lambda/custom/localisation.js).**
+    1. Navigate to the **Code** tab again, and expand the project folder on the left to `Skill Code/lambda`.
 
-    2.  **Look for the a specific locale such as `en`** This is the beginning of the section where you need to customize several text strings for your skill.
+    2.  Go to **[localisation.js](../lambda/custom/localisation.js).**
 
-    3.  For each prompt, such as `RECIPE_NOT_FOUND_REPROMPT`, replace the string contents with any sentence you would like Alexa to respond with instead. For example, the following changes will result in Alexa saying "Which sauce would you like to learn how to make?", instead of "Which sauce would you like to prepare?", when Alexa doesn't know which Sauce the user asked for.
+    3.  **Look for the a specific locale such as `en`** This is the beginning of the section where you need to customize several text strings for your skill.
+
+    4.  For each prompt, such as `RECIPE_NOT_FOUND_REPROMPT`, replace the string contents with any sentence you would like Alexa to respond with instead. For example, the following changes will result in Alexa saying "Which sauce would you like to learn how to make?", instead of "Which sauce would you like to prepare?", when Alexa doesn't know which Sauce the user asked for.
         
         Before:
         ```js
@@ -89,7 +96,7 @@ At this point, you should have a working copy of our Sauce Boss skill.  In order
                 ...,
                 ...,
                 ...,
-                RECIPE_NOT_FOUND_REPROMPT: `Which sauce would you like to prepare?`,
+                RECIPE_NOT_FOUND_REPROMPT: `Which sauce would you like to prepare?`, 
                 ...
             }
         },  
@@ -101,7 +108,7 @@ At this point, you should have a working copy of our Sauce Boss skill.  In order
                 ...,
                 ...,
                 ...,
-                RECIPE_NOT_FOUND_REPROMPT: `Which sauce would you like to learn how to make?`,
+                RECIPE_NOT_FOUND_REPROMPT: `Which sauce would you like to learn how to make?`, <-- CHANGED
                 ...
             }
         },  
