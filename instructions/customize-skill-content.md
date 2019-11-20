@@ -116,7 +116,7 @@ At this point, you should have a working copy of our Sauce Boss skill.  In order
         },  
         ```
 
-        After you're done editing all of the files necessary, as before, make sure to press **Save**, **Deploy**, and navigate back to the **Testing** tab. When you reopen your skill, Alexa should say "Which sauce would you like to learn how to make" instead!
+        After you're done editing all of the files necessary, as before, make sure to press **Save**, **Deploy**, and navigate back to the **Testing** tab. When you no recipe is found, Alexa should say "Which sauce would you like to learn how to make".
 
 
 3.  **New language.** If you are creating this skill for another language other than English, you will need to make sure Alexa's responses are also in that language.
