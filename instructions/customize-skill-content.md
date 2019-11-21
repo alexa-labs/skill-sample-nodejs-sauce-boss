@@ -13,7 +13,7 @@ At this point, you should have a working copy of our Sauce Boss skill.  In order
     
     2. Open **[helpIntent.json](../lambda/py/documents/helpIntent.json), [launchRequest.json](../lambda/py/documents/launchRequest.json), and [recipeIntent.json](../lambda/py/documents/recipeIntent.json)**
     
-    3. These files might look confusing, but don't worry, we only care about lines `14-35`. On line `14`, you will find a property called `resources` (Feel free to use CTRL+F to find it if needed). There are 3 JSON Objects in the `resources` array that we care about:
+    3. These files might look confusing, but don't worry, we only care about lines `14-35`. On line `14`, you will find a property called `resources` (Feel free to use CTRL+F to find it if needed), which contains all of the images and assets that our APL document uses. There are 3 JSON Objects in the `resources` array that we care about:
     ```js
     "resources": [
         {
