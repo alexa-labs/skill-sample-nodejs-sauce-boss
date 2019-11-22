@@ -9,11 +9,13 @@ At this point, you should have a working copy of our Sauce Boss skill.  In order
 
 1.  **APL Customization** You can change any of the images or APL Style for the entire skill's User Interface. To learn more about APL, feel free to read over the [APL Documentation](https://developer.amazon.com/docs/alexa-presentation-language/apl-document.html). For example, if you wanted to change the background image for the skill, you would do the following:
    
-    1. Navigate to the **Code** tab again, and expand the project folder on the left to `Skill Code/lambda/documents`.
+    1. Navigate to the **Code** tab again, and expand the project folder on the left to `Skill Code/lambda/apl`.
     
     2. Open **[helpIntent.json](../lambda/py/documents/helpIntent.json), [launchRequest.json](../lambda/py/documents/launchRequest.json), and [recipeIntent.json](../lambda/py/documents/recipeIntent.json)**
     
-    3. These files might look confusing, but don't worry, we only care about lines `14-35`. On line `14`, you will find a property called `resources` (Feel free to use CTRL+F to find it if needed), which contains all of the images and assets that our APL document uses. There are 3 JSON Objects in the `resources` array that we care about:
+    3. These files might look confusing, but don't worry, we only care about lines `14-35` for `helpIntent.json`, lines `54-73` for `launchRequest.json`, and lines `18-39` for `recipeIntent.json`. Let's focus on `helpIntent.json` for now, and you can repeat the process for `recipeIntent.json` and `launchRequest.json`.
+    
+     On line `14`, you will find a property called `resources` (Feel free to use CTRL+F to find it if needed), which contains all of the images and assets that our APL document uses. There are 3 JSON Objects in the `resources` array that we care about:
     ```js
     "resources": [
         {
@@ -85,7 +87,7 @@ At this point, you should have a working copy of our Sauce Boss skill.  In order
 
     1. Navigate to the **Code** tab again, and expand the project folder on the left to `Skill Code/lambda`.
 
-    2.  Go to **[localisation.js](../lambda/custom/localisation.js).**
+    2.  Go to **[languageStrings.js](../lambda/custom/languageStrings.js).**
 
     3.  **Look for the a specific locale such as `en`** This is the beginning of the section where you need to customize several text strings for your skill.
 

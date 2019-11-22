@@ -86,7 +86,7 @@ We are almost done!  The last step is to add the metadata that your skill will u
 	* Since you are using our Sample, make sure to add a sentence to your Testing Instructions referencing the Sample you used. For example:
 
     ```text
-    This was built using the Suace Boss Sample
+    This was built using the Sauce Boss Sample
     ```
 
     This will let the testing team understand what you're providing them, and should decrease the testing time required.
