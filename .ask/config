@@ -8,7 +8,7 @@
               "custom/default"
             ],
             "handler": "index.handler",
-            "runtime": "nodejs8.10"
+            "runtime": "nodejs12.x"
           }
         ]
       }
