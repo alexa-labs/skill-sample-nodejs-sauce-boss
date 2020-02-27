@@ -92,8 +92,7 @@ function recipeScreen(handlerInput, sauceItem) {
         // As APL is not supported by device
         // Provide prompt & reprompt instead of APL Karaoke
         handlerInput.responseBuilder
-            .speak(speakOutput)
-            .reprompt(repromptOutput);
+            .speak(speakOutput);
     }
 }
 
