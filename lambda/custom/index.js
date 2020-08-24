@@ -203,7 +203,7 @@ const RepeatHandler = {
     // Generate the JSON Response
     return handlerInput.responseBuilder
       .speak(sessionAttributes.speakOutput)
-      .reprompt(sessionAttributes.repromptSpeech)
+      .reprompt(sessionAttributes.repromptOutput)
       .getResponse();
   },
 };
