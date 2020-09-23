@@ -125,8 +125,8 @@ const HelpHandler = {
 
 /**
  * Handles AMAZON.PreviousIntent & Touch Interaction (Alexa.Presentation.APL.UserEvent - goBack) requests sent by Alexa
- * to replay the previous actionnable request (voice and/or display)
- * Actionnable Requests are:
+ * to replay the previous actionable request (voice and/or display)
+ * Actionable Requests are:
  * - IntentRequest - RecipeIntent
  * - IntentRequest - HelpIntent
  * - LaunchRequest
@@ -144,14 +144,14 @@ const PreviousHandler = {
     const { attributesManager } = handlerInput;
     // Get History from Session Attributes for replay
     const sessionAttributes = attributesManager.getSessionAttributes();
-    const actionnableHistory = sessionAttributes.actionnableHistory || [];
+    const actionableHistory = sessionAttributes.actionableHistory || [];
     // First actionable request is the one that is currently displayed or heard
     // So need to track when that is found so we can go back to the previous one
     let foundActionableRequestInHistory = false;
     let replayRequest;
-    while (actionnableHistory.length > 0) {
+    while (actionableHistory.length > 0) {
       // Get previous action
-      replayRequest = actionnableHistory.pop();
+      replayRequest = actionableHistory.pop();
       // Check if action can be replayed
       if (replayRequest
         && replayRequest.actionable
@@ -160,9 +160,9 @@ const PreviousHandler = {
         if ((replayRequest.type === 'IntentRequest'
           && replayRequest.intent.name === 'RecipeIntent')
           || (replayRequest.type === 'Alexa.Presentation.APL.UserEvent')) {
-          // Re-Add the actionnable request in history 
+          // Re-Add the actionable request in history 
           // to remember the latest displayed or heard
-          actionnableHistory.push(replayRequest);
+          actionableHistory.push(replayRequest);
           // Get sauce item from request history not current Request
           const sauceItem = recipeUtils.getSauceItem(replayRequest);
           // Return JSON Output for Recipe
@@ -170,18 +170,18 @@ const PreviousHandler = {
         }
         if (replayRequest.type === 'IntentRequest'
           && replayRequest.intent.name === 'AMAZON.HelpIntent') {
-          // Re-Add the actionnable request in history 
+          // Re-Add the actionable request in history 
           // to remember the latest displayed or heard
-          actionnableHistory.push(replayRequest);
+          actionableHistory.push(replayRequest);
           // Call AMAZON.Help Handler
           return HelpHandler.handle(handlerInput);
         }
-        // Note: we don't manage LaunchRequest here as it will be the default actionnable request
+        // Note: we don't manage LaunchRequest here as it will be the default actionable request
         // We can break the iteration
         break;
       }
-      // Update Flag when an actionnable request is found
-      // Next actionnable request in history (if any) will be replayed
+      // Update Flag when an actionable request is found
+      // Next actionable request in history (if any) will be replayed
       foundActionableRequestInHistory = replayRequest.actionable;
     }
     // No actionable history ? so just go to launch
@@ -202,8 +202,8 @@ const RepeatHandler = {
     const sessionAttributes = handlerInput.attributesManager.getSessionAttributes();
     // Generate the JSON Response
     return handlerInput.responseBuilder
-      .speak(sessionAttributes.speakOutput)
-      .reprompt(sessionAttributes.repromptSpeech)
+      .speak(sessionAttributes.lastSpeech.speakOutput)
+      .reprompt(sessionAttributes.lastSpeech.repromptOutput)
       .getResponse();
   },
 };
@@ -338,39 +338,50 @@ const ResponseRepeatInterceptor = {
   process(handlerInput, response) {
     const sessionAttributes = handlerInput.attributesManager.getSessionAttributes();
     if (response) {
-      // Save the response and reprompt for repeat
-      // Be sure to strip <speak> tags
+      console.log("TESTING START")
+      console.log(JSON.stringify(response));
+      console.log("TESTING END")
+      if (!sessionAttributes.lastSpeech){
+        sessionAttributes.lastSpeech = {}
+        console.log("sessionAttributes.lastSpeech does not exist yet, so let's declare it")
+      }
+      // Save the last response to the session attributes, should the customer ask the last response to be repeated
+      // Be sure to strip SSML <speak> tags
       if (response.outputSpeech && response.outputSpeech.ssml) {
         let speakOutput = response.outputSpeech.ssml;
         speakOutput = speakOutput.replace('<speak>', '').replace('</speak>', '');
-        sessionAttributes.speakOutput = speakOutput;
+        sessionAttributes.lastSpeech.speakOutput = speakOutput;
       }
+      // Save the reprompt phrase to the session attributes, should we need to reprompt the customer
+      // Be sure to strip SSML <speak> tags
       if (response.reprompt && response.reprompt.outputSpeech
         && response.reprompt.outputSpeech.ssml) {
         let repromptOutput = response.reprompt.outputSpeech.ssml;
         repromptOutput = repromptOutput.replace('<speak>', '').replace('</speak>', '');
-        sessionAttributes.repromptOutput = repromptOutput;
+        sessionAttributes.lastSpeech.repromptOutput = repromptOutput;
       }
     }
+    console.log("Printing Session Attributes");
+    console.log(JSON.stringify(sessionAttributes));
   }
 };
 
 /**
  * This Response Interceptor is responsible to record Requests for potential replay
  * from a user through AMAZON.RepeatIntent or a Touch Interaction (Alexa.Presentation.APL.UserEvent)
- * The following requests will be flag as actionnable (to be replayed):
+ * The following requests will be flag as actionable (to be replayed):
  * - IntentRequest - RecipeIntent
  * - IntentRequest - HelpIntent
  * - LaunchRequest
  * - Alexa.Presentation.APL.UserEvent - sauceInstructions
  */
-const ResponseActionnableHistoryInterceptor = {
+const ResponseActionableHistoryInterceptor = {
   process(handlerInput, response) {
-    // Define the number of entries for actionnable request in Session
+    // Define the number of entries for actionable request in Session
     const maxHistorySize = 5;
     // Get Session Atributes
     const sessionAttributes = handlerInput.attributesManager.getSessionAttributes();
-    const actionnableHistory = sessionAttributes.actionnableHistory || [];
+    const actionableHistory = sessionAttributes.actionableHistory || [];
     // Init request record
     const currentRequest = handlerInput.requestEnvelope.request;
     const recordRequest = {
@@ -400,16 +411,16 @@ const ResponseActionnableHistoryInterceptor = {
         //do nothing
         break;
     }
-    // Remove the first actionnable item if history limit is reached
-    if (actionnableHistory.length >= maxHistorySize) {
-      actionnableHistory.shift();
+    // Remove the first actionable item if history limit is reached
+    if (actionableHistory.length >= maxHistorySize) {
+      actionableHistory.shift();
     }
     // Only record request which will be replayed
     if (recordRequest.actionable){
-      actionnableHistory.push(recordRequest);
+      actionableHistory.push(recordRequest);
     }
     // Update session attributes
-    sessionAttributes.actionnableHistory = actionnableHistory;
+    sessionAttributes.actionableHistory = actionableHistory;
   },
 };
 
@@ -440,8 +451,8 @@ exports.handler = Alexa.SkillBuilders.custom()
   .addResponseInterceptors(
     LoggingResponseInterceptor,
     ResponseRepeatInterceptor,
-    ResponseActionnableHistoryInterceptor
+    ResponseActionableHistoryInterceptor
   )
-  .addErrorHandlers(ErrorHandler)
+  // .addErrorHandlers(ErrorHandler)
   .withCustomUserAgent('sauce-boss/v2')
   .lambda();
