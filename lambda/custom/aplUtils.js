@@ -86,8 +86,12 @@ function recipeScreen(handlerInput, sauceItem) {
         // As speech will be done by APL Command (SpeakItem) Voice/Text sync
         // Save prompt & reprompt for repeat
         const sessionAttributes = handlerInput.attributesManager.getSessionAttributes();
-        sessionAttributes.speakOutput = speakOutput;
-        sessionAttributes.repromptOutput = repromptOutput;
+        if (!sessionAttributes.lastSpeech){
+            sessionAttributes.lastSpeech = {}
+            console.log("sessionAttributes.lastSpeech does not exist yet, so let's declare it")
+          }
+        sessionAttributes.lastSpeech.speakOutput = speakOutput;
+        sessionAttributes.lastSpeech.repromptOutput = repromptOutput;
     } else {
         // As APL is not supported by device
         // Provide prompt & reprompt instead of APL Karaoke
